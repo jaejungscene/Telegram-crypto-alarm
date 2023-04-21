@@ -25,6 +25,9 @@ class AlertHandler:
 
     def poll_user_alerts(self, tg_user_id: str) -> None:
         """
+        Description:
+            alert to one specific user whose user id is tg_user_id
+
         1. Load the user's configuration
         2. poll all alerts and create posts
         3. Remove alert conditions
@@ -36,17 +39,21 @@ class AlertHandler:
         alerts_database = configuration.load_alerts()
         config = configuration.load_config()
 
+        # print("config|    ", config)
+        
         do_update = False  # If any changes are made, update the database
         post_queue = []
-        for pair in alerts_database.copy().keys():
 
+        # print("alerts_database|   ", alerts_database)
+
+        for pair in alerts_database.copy().keys():
             remove_queue = []
             for alert in alerts_database[pair]:
                 if alert['alerted']:
                     remove_queue.append(alert)
                     do_update = True  # Since the alert needs to be removed from the database, signal do_update
                     continue
-
+                
                 if alert['type'] == "s":
                     condition, value, post_string = self.get_simple_indicator(pair, alert)
                 elif alert['type'] == "t":
@@ -54,25 +61,36 @@ class AlertHandler:
                 else:
                     raise Exception("Invalid alert type: s = simple, t = technical")
 
+                # print("condition>>     ", condition)
+                # print("value>>         ", value)
+                # print("post_string>>   ", post_string)
+
                 if condition:  # If there is a condition satisfied
                     post_queue.append(post_string)
-                    alert['alerted'] = True
+                    alert['alerted'] = True # not to send again
                     do_update = True  # Since the alert needs to be updated in the database, signal do_update
 
             for item in remove_queue:
                 alerts_database[pair].remove(item)
-                if len(alerts_database[pair]) == 0:
+                if len(alerts_database[pair]) == 0: # if pair(like 'ETH') doesn't have any information
                     alerts_database.pop(pair)
 
         if do_update:
             configuration.update_alerts(alerts_database)
 
+        post_queue.append(
+"""ETH/USDT Moving Average (MA):
+  1 - PERIOD=30 ABOVE 1000.0 AT 1881.926
+  2 - hello"""
+        )
+        
+        # if post_queue has any post_string, send that post_string to all users
         if len(post_queue) > 0:
             self.polling = False
             for post in post_queue:
                 logger.info(post)
                 status = self.tg_alert(post=post, channel_ids=config['channels'])
-                if len(status[1]) > 0:
+                if len(status[1]) > 0: # if some user id cann't not receive alert.
                     logger.warn(f"Failed to send Telegram alert ({post}) to the following IDs: {status[1]}")
 
                 if config['settings']['send_email_alerts']:
@@ -91,6 +109,7 @@ class AlertHandler:
         3. Log individual user failures
         """
         for user in get_whitelist():
+            print("user|\t\t", user)
             self.poll_user_alerts(tg_user_id=user)
 
     def tg_alert(self, post: str, channel_ids: list[str]) -> tuple:
@@ -105,6 +124,7 @@ class AlertHandler:
         output = ([], [])
         for group_id in channel_ids:
             try:
+                # print("** requests is posted to bot **") # <------------------------------------------------------------
                 requests.post(url=f'https://api.telegram.org/bot{self.tg_bot_token}/sendMessage',
                               params={'chat_id': group_id, 'text': header_str + post, "parse_mode": "HTML"})
                 output[0].append(group_id)

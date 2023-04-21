@@ -9,13 +9,17 @@ from .indicators import TaapiioProcess
 from .custom_logger import logger
 
 if __name__ == "__main__":
-    print(getenv('TELEGRAM_BOT_TOKEN'))
+    
     if len(get_whitelist()) == 0:
         raise Exception("Setup not complete. "
                         "Please run the setup.py script to initialize the bot using 'python setup.py --id your_tg_id'")
 
     # Process environment variables
     handle_env()
+    print("TELEGRAM_BOT_TOKEN: ",getenv('TELEGRAM_BOT_TOKEN'))
+    print("TAAPIIO_APIKEY: ",getenv('TAAPIIO_APIKEY'))
+    print("TAAPIIO_APIKEY2: ",getenv('TAAPIIO_APIKEY2'))
+    print("-------------------------------------------------------")
 
     # Run the Taapi.io process in a daemon thread
     threading.Thread(target=TaapiioProcess(taapiio_apikey=getenv('TAAPIIO_APIKEY'),

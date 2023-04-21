@@ -304,13 +304,12 @@ class TaapiioProcess:
             # 2. Poll all values from the aggregate using bulk queries to the taapi.io API 
             aggregate = self.agg_cli.load_agg()
 
-            if (len(aggregate.values()) > 1):
-                print("-----------------")
-            else:
-                print("###############")
+            # print("aggregate|\t",aggregate)
+
             if all(len(v) == 0 for v in aggregate.values()):
                 sleep(0.1)  # To prevent excessive spamming
                 continue
+            
             for symbol, intervals in aggregate.items():
                 for interval, indicators in intervals.items():
                     num_indicators += len(indicators)  # For logging
