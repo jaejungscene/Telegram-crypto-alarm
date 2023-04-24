@@ -39,12 +39,10 @@ class AlertHandler:
         alerts_database = configuration.load_alerts()
         config = configuration.load_config()
 
-        # print("config|    ", config)
-        
         do_update = False  # If any changes are made, update the database
         post_queue = []
 
-        # print("alerts_database|   ", alerts_database)
+        print("alerts_database|   ", len(alerts_database['ETH/USDT']))
 
         for pair in alerts_database.copy().keys():
             remove_queue = []
@@ -78,11 +76,11 @@ class AlertHandler:
         if do_update:
             configuration.update_alerts(alerts_database)
 
-        post_queue.append(
-"""ETH/USDT Moving Average (MA):
-  1 - PERIOD=30 ABOVE 1000.0 AT 1881.926
-  2 - hello"""
-        )
+#         post_queue.append(
+# """ETH/USDT Moving Average (MA):
+#   1 - PERIOD=30 ABOVE 1000.0 AT 1881.926
+#   2 - hello"""
+#         )
         
         # if post_queue has any post_string, send that post_string to all users
         if len(post_queue) > 0:
@@ -247,6 +245,7 @@ class AlertHandler:
         null_output = False, 0, ""
 
         aggregate = self.ta_agg_cli.load_agg()
+
         if aggregate == {}:
             logger.warn("Attempted to load the aggregate in get_technical_indicator() but it was empty")
             return null_output
@@ -292,6 +291,7 @@ class AlertHandler:
         else:
             return null_output
 
+    
     def alert_admins(self, message: str):
         for user in get_whitelist():
             if UserConfiguration(user).admin_status():
