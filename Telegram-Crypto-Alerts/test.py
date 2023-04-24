@@ -42,10 +42,15 @@ agg = {
     'BTC': {'price': 4214}
     }
 
-generator = (len(v)==0 for v in agg.values())
-print(generator)
-for v in generator:
-    print(v)
-print("-----------")
-print(all(len(v)==0 for v in agg.values()))
+# generator = (len(v)==0 for v in agg.values())
+# print(generator)
+# for v in generator:
+#     print(v)
+# print("-----------")
+# print(all(len(v)==0 for v in agg.values()))
 # print(all([False, False]))
+
+post_str = ""
+for pair, agg in agg.items():
+    post_str = pair + "\n  " + str(agg)
+    print(post_str)

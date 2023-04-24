@@ -42,9 +42,8 @@ class AlertHandler:
         do_update = False  # If any changes are made, update the database
         post_queue = []
 
-        print("alerts_database|   ", len(alerts_database['ETH/USDT']))
-
         for pair in alerts_database.copy().keys():
+            print(">>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<")
             remove_queue = []
             for alert in alerts_database[pair]:
                 if alert['alerted']:
@@ -52,21 +51,17 @@ class AlertHandler:
                     do_update = True  # Since the alert needs to be removed from the database, signal do_update
                     continue
                 
-                if alert['type'] == "s":
-                    condition, value, post_string = self.get_simple_indicator(pair, alert)
-                elif alert['type'] == "t":
-                    condition, value, post_string = self.get_technical_indicator(pair, alert)
-                else:
-                    raise Exception("Invalid alert type: s = simple, t = technical")
+                # if alert['type'] == "s":
+                #     condition, value, post_string = self.get_simple_indicator(pair, alert)
+                # elif alert['type'] == "t":
+                #     condition, value, post_string = self.get_technical_indicator(pair, alert)
+                # else:
+                #     raise Exception("Invalid alert type: s = simple, t = technical")
 
-                # print("condition>>     ", condition)
-                # print("value>>         ", value)
-                # print("post_string>>   ", post_string)
-
-                if condition:  # If there is a condition satisfied
-                    post_queue.append(post_string)
-                    alert['alerted'] = True # not to send again
-                    do_update = True  # Since the alert needs to be updated in the database, signal do_update
+                post_string = self.process_transaction(pair, alert)
+                post_queue.append(post_string)
+                alert['alerted'] = True # not to send again
+                do_update = True  # Since the alert needs to be updated in the database, signal do_update
 
             for item in remove_queue:
                 alerts_database[pair].remove(item)
@@ -291,7 +286,10 @@ class AlertHandler:
         else:
             return null_output
 
-    
+    def process_transaction(self, pair: str, alert: dict) -> str:
+        post_str = pair + "\n  " + str(alert)
+        return post_str
+
     def alert_admins(self, message: str):
         for user in get_whitelist():
             if UserConfiguration(user).admin_status():
