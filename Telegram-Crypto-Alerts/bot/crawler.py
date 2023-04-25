@@ -3,12 +3,15 @@ import bs4
 from time import sleep
 from .io_client import get_whitelist, UserConfiguration
 from .custom_logger import logger
+from collections import OrderedDict
 
 
 class Crawler:
     COINS = ["ETH"] # Every coin to be Available to crawl so far
-    ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
     HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'}
+    # Parameters related to Etherium
+    ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
+    ETH_TXS_CLASS_TAG = "myFnExpandBox_searchVal"
 
     def __init__(self) -> None:
         self.coin_users_map = {}
@@ -19,19 +22,40 @@ class Crawler:
             for coin in user_coins:
                 self.coin_users_map[coin].append(user)
     
+    def extract_txs(response: requests.models.Response) -> dict:
+        soup = bs4.BeautifulSoup(response.content, "html.parser")
+        table = soup.find('tbody', {'class':'align-middle text-nowrap'})
+        data_dict = OrderedDict()
+        for row in table.find_all('tr'):
+            row_data = row.find_all('td')
+            txs_hash = row_data[1].text.strip()
+            txs_values = {
+                "Method": row_data[2].text.strip(),
+                "Block": row_data[3].text.strip(),
+                "From": row_data[7].text.strip(),
+                "To": row_data[9].text.strip(),
+                "Value": row_data[10].text.strip(),
+                "Txn Fee": row_data[11].text.strip()
+            }
+            data_dict[txs_hash] = txs_values
+        return data_dict
+
     def crawl_store_ether(self, users) -> None:
         """
         Crawl etherium transaction from Etherscan site and Store the processed data to user's "alerts.json" file
         """
-        self.eth_buffer = ""
-        response = requests.get(self.ETH_URL, headers=self.HEADERS)
-        if response.status_code == 200:
-            # Success
-            # print(response.text)
-            print("Success!!")
-        else:
-            # Failure
-            print('Request failed with status code:', response.status_code)
+        num_txs = 100
+        num_page = 1
+
+        response = requests.get(self.ETH_URL+f"?ps={num_txs}&p={num_page}", headers=self.HEADERS)
+        # process first response        
+        data_dict = self.extract_txs(response)
+        # set first transaction in first response html file
+        self.prev_first_txs = next(iter(data_dict.keys()))
+
+
+        if response.status_code == 200: print("Success!!")
+        else:   print('Request failed with status code:', response.status_code)
         
         print(len(response.text))
         print("="*100)
