@@ -1,5 +1,14 @@
-t = "asdfasdfasdf"
-x = "asdfasdfasdf"
+class Temp:
+    def __init__(self, x) -> None:
+        self.x = x
 
-if t == x:
-    print(True)
+    def func(self):
+        print(self.x)
+        self.y = self.x+2
+        print(self.y)
+
+
+temp = Temp(321)
+print(getattr(temp, 'x'))
+temp.func()
+print(getattr(temp, 'y'))
