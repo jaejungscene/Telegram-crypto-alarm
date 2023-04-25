@@ -26,7 +26,7 @@ class UserConfiguration:
         self.default_alerts_path = join(RESOURCES_ROOT, 'default_alerts.json')
         self.default_config_path = join(RESOURCES_ROOT, 'default_config.json')
 
-    def whitelist_user(self, is_admin: bool = False):
+    def whitelist_user(self, coins: list, is_admin: bool = False):
         """Add necessary files and directories to database for TG user ID"""
 
         # Return if user data directory already exists
@@ -43,6 +43,7 @@ class UserConfiguration:
             default_config["channels"].append(self.user_id)
             if is_admin:
                 default_config["is_admin"] = True
+            default_config["coins"] = coins
             with open(self.config_path, 'w') as _out:
                 _out.write(json.dumps(default_config, indent=2))
 
