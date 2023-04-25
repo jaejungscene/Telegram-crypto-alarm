@@ -20,6 +20,9 @@ class Crawler:
                 self.coin_users_map[coin].append(user)
     
     def crawl_store_ether(self, users) -> None:
+        """
+        Crawl etherium transaction from Etherscan site and Store the processed data to user's "alerts.json" file
+        """
         self.eth_buffer = ""
         response = requests.get(self.ETH_URL, headers=self.HEADERS)
         if response.status_code == 200:
