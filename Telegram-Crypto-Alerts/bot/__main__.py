@@ -22,9 +22,9 @@ if __name__ == "__main__":
     print("-------------------------------------------------------")
 
     # Run the Taapi.io process in a daemon thread
-    threading.Thread(target=TaapiioProcess(taapiio_apikey=getenv('TAAPIIO_APIKEY'),
-                                           telegram_bot_token=getenv('TELEGRAM_BOT_TOKEN')).run, 
-                     daemon=True).start()
+    # threading.Thread(target=TaapiioProcess(taapiio_apikey=getenv('TAAPIIO_APIKEY'),
+    #                                        telegram_bot_token=getenv('TELEGRAM_BOT_TOKEN')).run, 
+    #                  daemon=True).start()
 
     # Run the AlertHandler() in a daemon thread
     threading.Thread(target=AlertHandler(telegram_bot_token=getenv('TELEGRAM_BOT_TOKEN'),

@@ -37,10 +37,10 @@
 #   2 - hello"""
 #         )
 
-agg = {
-    'ETH': {123:'as', 'fd':3.1},
-    'BTC': {'price': 4214}
-    }
+# agg = {
+#     'ETH': {123:'as', 'fd':3.1},
+#     'BTC': {'price': 4214}
+#     }
 
 # generator = (len(v)==0 for v in agg.values())
 # print(generator)
@@ -50,7 +50,44 @@ agg = {
 # print(all(len(v)==0 for v in agg.values()))
 # print(all([False, False]))
 
-post_str = ""
-for pair, agg in agg.items():
-    post_str = pair + "\n  " + str(agg)
-    print(post_str)
+# post_str = ""
+# for pair, agg in agg.items():
+#     post_str = pair + "\n  " + str(agg)
+#     print(post_str)
+
+
+# from bot.crawler import Crawler
+
+# crawler = Crawler()
+# crawler.run()
+
+# s = {"name": "jaejung"}
+# print(next(iter(s.keys())))
+# ETH_METHOD = ['Repay', 'Borrow', 'Redeem', 'Underlying', 'Single', 'Transfer']
+# s = 'Borrow'
+# s1 = 'Jaejung'
+# if s in ETH_METHOD:
+#     print(True)
+# if s1 in ETH_METHOD:
+#     print("s1 true")
+
+# path = "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/1234/alerts.json"
+# import json
+# with open(path, "r") as f:
+#     data = json.load(f)
+# new_data = data.copy()
+# new_data['ETH'] = {}
+# print(len(data['ETH']))
+# print(len(new_data['ETH']))
+
+# print(ETH_METHOD.append(['hello']))
+# print(ETH_METHOD + ['hello'])
+
+import time
+from bot.crawler import Crawler
+
+crawler = Crawler()
+crawler.run()
+while True:
+    time.sleep(1)
+    print("--------> still running")

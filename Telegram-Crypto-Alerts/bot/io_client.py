@@ -3,7 +3,7 @@ from os.path import isdir, join, dirname, abspath, isfile, exists
 import json
 from dotenv import find_dotenv, load_dotenv
 import shutil
-
+import threading
 from .static_config import *
 
 
@@ -14,6 +14,7 @@ class UserConfiguration:
         """
         :param tg_user_id: The Telegram user ID of the bot user to locate their configuration
         """
+        self.lock = threading.Lock()
         self.user_id = tg_user_id
         self.user_config_root = join(WHITELIST_ROOT, f'{self.user_id}')
         self.config_path = join(WHITELIST_ROOT, f'{self.user_id}', 'config.json')
@@ -62,8 +63,29 @@ class UserConfiguration:
 
     def load_alerts(self) -> dict:
         """Load the database contents and return it in JSON format"""
-        with open(self.alerts_path, 'r') as infile:
-            return json.load(infile)
+        with self.lock:
+            with open(self.alerts_path, 'r') as infile:
+                return json.load(infile)
+    
+    def Lock_load_and_remove_alerts(self) -> dict:
+        """Load alerts data and Reset(remove) data from json file"""    
+        with self.lock:
+            with open(self.alerts_path, 'r') as f:
+                data = json.load(f)
+            new_data = data.copy()
+            for key in data.keys():
+                new_data[key] = []
+            with open(self.alerts_path, 'w') as f:
+                f.write(json.dumps(new_data, indent=2))
+        return data
+
+    def Lock_update_coin_alerts(self, coin_data: list, coin: str) -> None:
+        with self.lock:
+            with open(self.alerts_path, "r") as f:
+                data = json.load(f)
+            data[coin] = data[coin] + coin_data
+            with open(self.alerts_path, 'w') as f:
+                f.write(json.dumps(data, indent=2))
 
     def update_alerts(self, data: dict) -> None:
         with open(self.alerts_path, 'w') as outfile:
