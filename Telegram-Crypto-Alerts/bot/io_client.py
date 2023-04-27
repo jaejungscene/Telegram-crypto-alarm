@@ -4,6 +4,7 @@ import json
 from dotenv import find_dotenv, load_dotenv
 import shutil
 import threading
+import fcntl
 from .static_config import *
 
 
@@ -38,18 +39,24 @@ class UserConfiguration:
         mkdir(self.user_config_root)
 
         try:
-            # Make default configuration:
-            with open(self.default_config_path, 'r') as _in:
-                default_config = json.load(_in)
-            default_config["channels"].append(self.user_id)
-            if is_admin:
-                default_config["is_admin"] = True
-            default_config["coins"] = coins
-            with open(self.config_path, 'w') as _out:
-                _out.write(json.dumps(default_config, indent=2))
+            with self.lock:
+                # Make default configuration:
+                with open(self.default_config_path, 'r') as _in:
+                    default_config = json.load(_in)
+                default_config["channels"].append(self.user_id)
+                if is_admin:
+                    default_config["is_admin"] = True
+                default_config["coins"] = coins
+                with open(self.config_path, 'w') as _out:
+                    _out.write(json.dumps(default_config, indent=2))
 
-            # Make default alerts configuration
-            shutil.copy(self.default_alerts_path, self.alerts_path)
+                # Make default alerts configuration
+                alert_file = {}
+                for coin in default_config['coins']:
+                    alert_file[coin] = []
+                
+                with open(self.alerts_path, 'w') as _out:
+                    _out.write(json.dumps(alert_file, indent=2))
         except Exception as exc:
             self.blacklist_user()
             raise exc
@@ -68,33 +75,40 @@ class UserConfiguration:
                 return json.load(infile)
     
     def Lock_load_and_remove_alerts(self) -> dict:
-        """Load alerts data and Reset(remove) data from json file"""    
-        with self.lock:
-            with open(self.alerts_path, 'r') as f:
-                data = json.load(f)
+        """Load alerts data and Reset(remove) data from json file"""
+        with open(self.alerts_path, "r+") as f:
+            fcntl.flock(f, fcntl.LOCK_EX)
+            data = json.load(f)
             new_data = data.copy()
             for key in data.keys():
                 new_data[key] = []
-            with open(self.alerts_path, 'w') as f:
-                f.write(json.dumps(new_data, indent=2))
+            f.seek(0)
+            f.write(json.dumps(new_data, indent=2))
+            f.truncate()  # truncate the file to the new size
+            fcntl.flock(f, fcntl.LOCK_UN)  # release the lock
         return data
 
     def Lock_update_coin_alerts(self, coin_data: list, coin: str) -> None:
-        with self.lock:
-            with open(self.alerts_path, "r") as f:
-                data = json.load(f)
+        with open(self.alerts_path, "r+") as f:
+            fcntl.flock(f, fcntl.LOCK_EX)
+            data = json.load(f)
             data[coin] = data[coin] + coin_data
-            with open(self.alerts_path, 'w') as f:
-                f.write(json.dumps(data, indent=2))
+            f.seek(0)
+            f.write(json.dumps(data, indent=2))
+            f.truncate()  # truncate the file to the new size
+            fcntl.flock(f, fcntl.LOCK_UN)  # release the lock
 
     def reset_all_alerts(self) -> None:
-        with self.lock:
-            with open(self.alerts_path, 'r') as f:
-                data = json.load(f)
+        with open(self.alerts_path, "r+") as f:
+            fcntl.flock(f, fcntl.LOCK_EX)  # lock the file for exclusive access
+            data = json.load(f)
             for k in data.keys():
                 data[k] = []
-            with open(self.alerts_path, 'w') as f:
-                f.write(json.dumps(data, indent=2))
+            # modify the contents here
+            f.seek(0)  # move the file pointer to the beginning of the file
+            f.write(json.dumps(data, indent=2))  # write the modified contents back to the file
+            f.truncate()  # truncate the file to the new size
+            fcntl.flock(f, fcntl.LOCK_UN)  # release the lock
 
     def update_alerts(self, data: dict) -> None:
         with open(self.alerts_path, 'w') as outfile:

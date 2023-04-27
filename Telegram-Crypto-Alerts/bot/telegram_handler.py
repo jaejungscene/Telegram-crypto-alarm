@@ -6,10 +6,12 @@ from .custom_logger import logger
 from .io_client import UserConfiguration, get_logfile, get_help_command, get_whitelist
 from .static_config import *
 from .indicators import TADatabaseClient, TaapiioProcess, TechnicalIndicator, SimpleIndicator
+from .crawler import COINS
 
 from telebot import TeleBot
 import requests
 from requests.exceptions import ReadTimeout
+import telebot
 
 
 class TelegramBot(TeleBot):
@@ -20,7 +22,7 @@ class TelegramBot(TeleBot):
         self.taapiio_cli = None if taapiio_apikey is None else TaapiioProcess(taapiio_apikey)
 
         @self.message_handler(commands=['id'])
-        def on_id(message):
+        def on_id(message: telebot.types.Message):
             """Public function to return someone's Telegram user ID"""
             self.reply_to(message, f"{message.from_user.username}'s Telegram ID:\n{message.from_user.id}")
 
@@ -28,6 +30,34 @@ class TelegramBot(TeleBot):
         @self.is_whitelisted
         def on_help(message):
             self.reply_to(message, get_help_command())
+
+        @self.message_handler(commands=['startalert'])
+        def on_startalert(message: telebot.types.Message):
+            """/startalert <coin_name>"""
+            msg = self.split_message(message.text)
+            coin_names = []
+            if len(msg) == 0:
+                self.reply_to(message, f"Argument(coin_name) was missed")
+                return
+            for m in msg:
+                name = m.upper()
+                if name not in COINS:
+                    self.reply_to(message, f"\'{m}\' coin is not available now, Please give me another coin")
+                else:   
+                    coin_names.append(name)
+            
+            if len(coin_names) > 0:
+                UserConfiguration(message.from_user.id).whitelist_user(coin_names, is_admin=True)
+                self.reply_to(message, f"Successfully started \"{str(coin_names)}\" alert!")
+        
+
+        @self.message_handler(commands=['stopalert'])
+        @self.is_whitelisted
+        def on_stopalert(message: telebot.types.Message):
+            """/stopalert"""
+            msg = self.split_message(message.text)
+            coin_names = UserConfiguration(message.from_user.id).blacklist_user()
+            self.reply_to(message, f"Successfully stoped alert!")
 
         @self.message_handler(commands=['newalert'])
         @self.is_whitelisted

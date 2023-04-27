@@ -9,30 +9,19 @@ from .static_config import WHITELIST_ROOT
 from collections import OrderedDict
 import threading
 
-
+COINS = ["ETH"] # Every coin to be Available to crawl so far
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'}
+# Parameters related to Etherium
+ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
+ETH_TXS_CLASS_TAG = "myFnExpandBox_searchVal"
+ETH_METHOD = ['Repay', 'Borrow', 'Redeem', 'Underlying', 'Single', 'Transfer']
 
 
 class Crawler:
-    COINS = ["ETH"] # Every coin to be Available to crawl so far
-    HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'}
-    # Parameters related to Etherium
-    ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
-    ETH_TXS_CLASS_TAG = "myFnExpandBox_searchVal"
-    ETH_METHOD = ['Repay', 'Borrow', 'Redeem', 'Underlying', 'Single', 'Transfer']
-
-
     def __init__(self) -> None:
         self.coin_users_map = {}
-        for coin in self.COINS:
+        for coin in COINS:
             self.coin_users_map[coin] = []
-        for user in get_whitelist():
-            cfg = UserConfiguration(user)
-            cfg.reset_all_alerts()
-            user_cfg = cfg.load_config()
-            user_coins = user_cfg['coins']
-            for coin in user_coins:
-                self.coin_users_map[coin].append(user)
-    
 
     def extract_txs(self, response_list: list, only_first=False, prev_first_hash: str=None) -> tuple:
         match = False
@@ -55,7 +44,7 @@ class Crawler:
                     "To": row_data[9].text.strip(),
                     "Value": row_data[10].text.strip(),
                     "Txn Fee": row_data[11].text.strip(),
-                    "URL for detail": ospt.join(self.ETH_URL[:-1], txs_hash)
+                    "URL for detail": ospt.join(ETH_URL[:-1], txs_hash)
                 }
                 if only_first:
                     data.append(txs_values)
@@ -66,7 +55,7 @@ class Crawler:
                     match = True
                     break
                 else:
-                    if txs_values['Method'] in self.ETH_METHOD:
+                    if txs_values['Method'] in ETH_METHOD:
                         data.append(txs_values)
             if match:
                 break
@@ -83,8 +72,11 @@ class Crawler:
 
     def store_data_to_user(self, users: list, coin_data: list, coin: str) -> None:
         for user in users:
-            configuration = UserConfiguration(user)
-            configuration.Lock_update_coin_alerts(coin_data=coin_data, coin=coin)
+            try:
+                configuration = UserConfiguration(user)
+                configuration.Lock_update_coin_alerts(coin_data=coin_data, coin=coin)
+            except Exception:
+                print(f"Jump the {user}")
 
 
     def crawl_store_ether(self, users: list) -> None:
@@ -98,7 +90,7 @@ class Crawler:
 
         # receive and process the first response
         while True:
-            response = requests.get(self.ETH_URL+f"?ps={num_txs}&p={num_page}", headers=self.HEADERS)
+            response = requests.get(ETH_URL+f"?ps={num_txs}&p={num_page}", headers=HEADERS)
             if response.status_code != 200: continue
             else:   break
         data, _ = self.extract_txs(response_list=[response], only_first=True)
@@ -108,11 +100,11 @@ class Crawler:
         prev_first_hash = data[0]['hash'] # set first transaction in first response html file
 
         num_txs = 100
-        while True:
+        while True and len(get_whitelist()) > 0:
             # keep receiving the response
             response_list = []
             while len(response_list) < request_num:
-                response = requests.get(self.ETH_URL+f"?ps={num_txs}&p={len(response_list)+1}", headers=self.HEADERS)
+                response = requests.get(ETH_URL+f"?ps={num_txs}&p={len(response_list)+1}", headers=HEADERS)
                 if response.status_code == 200:
                     response_list.append(response)
             data, _ = self.extract_txs(response_list=response_list, only_first=False, prev_first_hash=prev_first_hash)
@@ -125,21 +117,39 @@ class Crawler:
 
 
     def main_process(self) -> None:
+        for coin in COINS:
+            self.coin_users_map[coin] = []
+
+        for user in get_whitelist():
+            print("%"*100)
+            cfg = UserConfiguration(user)
+            try:
+                cfg.reset_all_alerts()
+            except FileNotFoundError:
+                print("%%% ERROR %%%")
+                continue
+            user_cfg = cfg.load_config()
+            user_coins = user_cfg['coins']
+            for coin in user_coins:
+                self.coin_users_map[coin].append(user)
+
         for coin, users in self.coin_users_map.items():
             if coin == "ETH" and len(users) > 0:
-                threading.Thread(target=self.crawl_store_ether, daemon=True, args=[users]).start()
+                self.crawl_store_ether(users)
+                # threading.Thread(target=self.crawl_store_ether, daemon=True, args=[users]).start()
 
 
 
     def run(self) -> None:
         restart_period = 10
         try:
-            self.main_process()
+            while True:
+                self.main_process()
         except KeyboardInterrupt:
             return
         except Exception as exc:
             logger.critical(f"An error has occurred in the mainloop - restarting in 5 seconds...", exc_info=exc)
-            self.alert_admins(message=f"A critical error has occurred in the TaapiioProcess "
-                                      f"(Restarting in {restart_period} seconds) - {exc}")
+            # self.alert_admins(message=f"A critical error has occurred in the TaapiioProcess "
+            #                           f"(Restarting in {restart_period} seconds) - {exc}")
             sleep(restart_period)
             return self.run()

@@ -39,6 +39,16 @@ class AlertHandler:
         config = configuration.load_config()
         alerts_database = configuration.Lock_load_and_remove_alerts()
 
+        # try:
+        #     config = configuration.load_config()
+        # except:
+        #     config = configuration.load_config()
+        # while True:
+        #     try:
+        #         alerts_database = configuration.Lock_load_and_remove_alerts()
+        #     except:
+        #         alerts_database = configuration.Lock_load_and_remove_alerts()
+
         for pair in alerts_database.keys():
             # reverse: to send in old order
             for alert in reversed(alerts_database[pair]):
@@ -50,6 +60,8 @@ class AlertHandler:
                 if config['settings']['send_email_alerts']:
                     self.email_alert_sendgrid(post, configuration)
                 print("="*70)
+                if tg_user_id not in get_whitelist():
+                    return
 
 
     def process_txs(self, pair: str, alert: dict) -> str:
