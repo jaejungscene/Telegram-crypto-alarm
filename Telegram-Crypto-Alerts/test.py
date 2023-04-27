@@ -83,11 +83,47 @@
 # print(ETH_METHOD.append(['hello']))
 # print(ETH_METHOD + ['hello'])
 
-import time
-from bot.crawler import Crawler
+# import time
+# from bot.crawler import Crawler
 
-crawler = Crawler()
-crawler.run()
-while True:
-    time.sleep(1)
-    print("--------> still running")
+# crawler = Crawler()
+# crawler.run()
+# while True:
+#     time.sleep(1)
+#     print("--------> still running")
+# s = "asdfa"
+# print(s[:-1])
+
+# from ratelimit import limits, sleep_and_retry
+# POLLING_PERIOD = 1
+
+# @sleep_and_retry
+# @limits(calls=1, period=POLLING_PERIOD)
+# def poll_all_alerts() -> None:
+#     print("-----> hello world")
+
+# for _ in range(10):
+#     poll_all_alerts()
+
+
+s = "\n - <b>Hash</b>: {alert['hash']}\
+\n - <b>Method</b>: {alert['Method']}\
+\n - <b>Block</b>: {alert['Block']}\
+\n - <b>From</b>: {alert['From']}\
+\n - <b>To</b>: {alert['To']}\
+\n - <b>Value</b>: {alert['Value']}\
+\n - <b>Txn Fee</b>: {alert['Txn Fee']}\
+\n - <b>URL for detail</b>: {alert['URL for detail']}"
+
+"""
+<table>\
+\n - <tr> <td><b>Hash</b></td> <td>{alert['hash']}</td> </tr>\
+\n - <tr> <td><b>Method</b></td> <td>{alert['Method']}</td> </tr>\
+\n - <tr> <td><b>Block</b></td> <td>{alert['Block']}</td> </tr>\
+\n - <tr> <td><b>From</b></td> <td>{alert['From']}</td> </tr>\
+\n - <tr> <td><b>To</b></td> <td>{alert['To']}</td> </tr>\
+\n - <tr> <td><b>Value</b></td> <td>{alert['Value']}</td> </tr>\
+\n - <tr> <td><b>Txn Fee</b></td> <td>{alert['Txn Fee']}</td> </tr>\
+\n - <tr> <td><b>URL for detail</b></td> {alert['URL for detail']}</td> </tr>\
+</table>
+"""

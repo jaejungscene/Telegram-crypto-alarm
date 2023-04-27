@@ -39,16 +39,9 @@ class AlertHandler:
         config = configuration.load_config()
         alerts_database = configuration.Lock_load_and_remove_alerts()
 
-        # do_update = False  # If any changes are made, update the database
-        # post_queue = []
-
         for pair in alerts_database.keys():
-            print(">>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<")
-
             # reverse: to send in old order
             for alert in reversed(alerts_database[pair]):
-                print("---------------> ",alert["hash"])
-                # do_update = True  # Since the alert needs to be removed from the database, signal do_update
                 post = self.process_txs(pair, alert)
                 logger.info(post)
                 status = self.tg_alert(post=post, channel_ids=config['channels'])
@@ -56,41 +49,24 @@ class AlertHandler:
                     logger.warn(f"Failed to send Telegram alert ({post}) to the following IDs: {status[1]}")
                 if config['settings']['send_email_alerts']:
                     self.email_alert_sendgrid(post, configuration)
+                print("="*70)
 
-                
-                # post_queue.append(post_string)
-                # alert['alerted'] = True # not to send again
-                # do_update = True  # Since the alert needs to be updated in the database, signal do_update
-            # for item in remove_queue:
-            #     alerts_database[pair].remove(item)
-            #     if len(alerts_database[pair]) == 0: # if pair(like 'ETH') doesn't have any information
-            #         alerts_database.pop(pair)
-        # if do_update:
-        #     configuration.update_alerts(alerts_database)
 
-#         post_queue.append(
-# """ETH/USDT Moving Average (MA):
-#   1 - PERIOD=30 ABOVE 1000.0 AT 1881.926
-#   2 - hello"""
-#         )
-        
-        # # if post_queue has any post_string, send that post_string to all users
-        # if len(post_queue) > 0:
-        #     self.polling = False
-        #     for post in post_queue:
-        #         logger.info(post)
-        #         status = self.tg_alert(post=post, channel_ids=config['channels'])
-        #         if len(status[1]) > 0: # if some user id cann't not receive alert.
-        #             logger.warn(f"Failed to send Telegram alert ({post}) to the following IDs: {status[1]}")
-        #         if config['settings']['send_email_alerts']:
-        #             self.email_alert_sendgrid(post, configuration)
+    def process_txs(self, pair: str, alert: dict) -> str:
+        string = f"\n - <b>Hash</b>: {alert['hash']}\
+\n - <b>Method</b>:    {alert['Method']}\
+\n - <b>Block</b>:    {alert['Block']}\
+\n - <b>From</b>:    {alert['From']}\
+\n - <b>To</b>:    {alert['To']}\
+\n - <b>Value</b>:    {alert['Value']}\
+\n - <b>Txn Fee</b>:    {alert['Txn Fee']}\
+\n - <b>URL for detail</b>: {alert['URL for detail']}"
+        post_str = "<b>"+pair+"</b>" + string
+        return post_str
 
-        # if not self.polling:
-        #     self.polling = True
-        #     logger.info(f'Bot polling for next alert...')
 
     @sleep_and_retry
-    @limits(calls=1, period=POLLING_PERIOD)
+    @limits(calls=1, period=0.1)
     def poll_all_alerts(self) -> None:
         """
         1. Aggregate pairs across all users
@@ -98,8 +74,9 @@ class AlertHandler:
         3. Log individual user failures
         """
         for user in get_whitelist():
-            print("user|\t\t", user)
+            # print("user|\t\t", user)
             self.poll_user_alerts(tg_user_id=user)
+
 
     def tg_alert(self, post: str, channel_ids: list[str]) -> tuple:
         """
@@ -121,6 +98,7 @@ class AlertHandler:
                 output[1].append(group_id)
 
         return output
+
 
     def email_alert_sendgrid(self, post: str, configuration: UserConfiguration) -> None:
         """
@@ -177,6 +155,7 @@ class AlertHandler:
     #
     #     logger.info(f"Emails sent to: {emails}")
 
+
     def get_simple_indicator(self, pair: str, alert: dict, pair_price: float = None) -> tuple[bool, float, str]:
         """
         Accounts for the 3 following simple price movement indicators:
@@ -218,6 +197,7 @@ class AlertHandler:
                 return True, pair_price, f"{pair} BELOW {target} TARGET AT {pair_price}"
 
         return False, pair_price, ""
+
 
     def get_technical_indicator(self, pair: str, alert: dict) -> tuple[bool, float, str]:
         """
@@ -281,10 +261,6 @@ class AlertHandler:
             return True, value, post_str
         else:
             return null_output
-
-    def process_txs(self, pair: str, alert: dict) -> str:
-        post_str = pair + "\n  " + str(alert)
-        return post_str
 
     def alert_admins(self, message: str):
         for user in get_whitelist():

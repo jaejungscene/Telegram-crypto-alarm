@@ -87,6 +87,15 @@ class UserConfiguration:
             with open(self.alerts_path, 'w') as f:
                 f.write(json.dumps(data, indent=2))
 
+    def reset_all_alerts(self) -> None:
+        with self.lock:
+            with open(self.alerts_path, 'r') as f:
+                data = json.load(f)
+            for k in data.keys():
+                data[k] = []
+            with open(self.alerts_path, 'w') as f:
+                f.write(json.dumps(data, indent=2))
+
     def update_alerts(self, data: dict) -> None:
         with open(self.alerts_path, 'w') as outfile:
             outfile.write(json.dumps(data, indent=2))

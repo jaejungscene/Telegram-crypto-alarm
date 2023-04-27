@@ -7,6 +7,7 @@ from .telegram_handler import TelegramBot
 from .io_client import handle_env, get_whitelist
 from .indicators import TaapiioProcess
 from .custom_logger import logger
+from .crawler import Crawler
 
 if __name__ == "__main__":
     
@@ -25,6 +26,10 @@ if __name__ == "__main__":
     # threading.Thread(target=TaapiioProcess(taapiio_apikey=getenv('TAAPIIO_APIKEY'),
     #                                        telegram_bot_token=getenv('TELEGRAM_BOT_TOKEN')).run, 
     #                  daemon=True).start()
+
+    # Run the Crawler() in a daemon thread
+    threading.Thread(target=Crawler().run, 
+                     daemon=True).start()
 
     # Run the AlertHandler() in a daemon thread
     threading.Thread(target=AlertHandler(telegram_bot_token=getenv('TELEGRAM_BOT_TOKEN'),

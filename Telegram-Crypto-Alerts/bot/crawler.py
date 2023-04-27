@@ -26,7 +26,10 @@ class Crawler:
         for coin in self.COINS:
             self.coin_users_map[coin] = []
         for user in get_whitelist():
-            user_coins = UserConfiguration(user).load_config()['coins']
+            cfg = UserConfiguration(user)
+            cfg.reset_all_alerts()
+            user_cfg = cfg.load_config()
+            user_coins = user_cfg['coins']
             for coin in user_coins:
                 self.coin_users_map[coin].append(user)
     
@@ -37,6 +40,10 @@ class Crawler:
         for response in response_list:
             soup = bs4.BeautifulSoup(response.content, "html.parser")
             table = soup.find('tbody', {'class':'align-middle text-nowrap'})
+            if table == None:
+                print("---------------> response:", response)
+                print("---------------> table:", table)
+                continue
             for row in table.find_all('tr'):
                 row_data = row.find_all('td')
                 txs_hash = row_data[1].text.strip()
@@ -48,13 +55,14 @@ class Crawler:
                     "To": row_data[9].text.strip(),
                     "Value": row_data[10].text.strip(),
                     "Txn Fee": row_data[11].text.strip(),
-                    "URL for detail": ospt.join(self.ETH_URL, txs_hash)
+                    "URL for detail": ospt.join(self.ETH_URL[:-1], txs_hash)
                 }
-                # print(">> ",txs_values['Method'])
                 if only_first:
                     data.append(txs_values)
                     break
                 elif txs_values['hash']==prev_first_hash:
+                    print(">>>>>>>>>>>>>>> prev_first_hash:", prev_first_hash)
+                    # if only_first: data.append(txs_values) #<----------------------------------- for test
                     match = True
                     break
                 else:
@@ -62,7 +70,7 @@ class Crawler:
                         data.append(txs_values)
             if match:
                 break
-        # print(len(data))
+        print(">>>>>>>>>>>>>>>>>>>>> len(data):",len(data))
         return (data, match)
 
 
@@ -86,7 +94,7 @@ class Crawler:
         coin = 'ETH'
         num_txs = 25
         num_page = 1
-        request_num = 5
+        request_num = 3
 
         # receive and process the first response
         while True:
@@ -94,7 +102,9 @@ class Crawler:
             if response.status_code != 200: continue
             else:   break
         data, _ = self.extract_txs(response_list=[response], only_first=True)
-        print(data) #<-----------------------------------------------
+        print('>>>>>>>>>>>>>>> first txs hash: ',data[0]['hash']) #<-----------------------------------------------
+        print('>>>>>>>>>>>>>>> first txs block: ',data[0]['Block']) #<-----------------------------------------------
+        # self.store_data_to_user(users=users, coin_data=data, coin=coin) #<-------------------------------------
         prev_first_hash = data[0]['hash'] # set first transaction in first response html file
 
         num_txs = 100
