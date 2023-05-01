@@ -55,8 +55,7 @@ class TelegramBot(TeleBot):
         @self.is_whitelisted
         def on_stopalert(message: telebot.types.Message):
             """/stopalert"""
-            msg = self.split_message(message.text)
-            coin_names = UserConfiguration(message.from_user.id).blacklist_user()
+            UserConfiguration(message.from_user.id).blacklist_user()
             self.reply_to(message, f"Successfully stoped alert!")
 
         @self.message_handler(commands=['newalert'])

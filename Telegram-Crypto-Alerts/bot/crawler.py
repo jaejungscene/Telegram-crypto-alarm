@@ -14,7 +14,11 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 # Parameters related to Etherium
 ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
 ETH_TXS_CLASS_TAG = "myFnExpandBox_searchVal"
-ETH_METHOD = ['Repay', 'Borrow', 'Redeem', 'Underlying', 'Single', 'Transfer']
+ETH_METHOD = list(map(lambda x: x.lower(), ['Swap Exact Tokens For Tokens Supporting Fee On Transfer Tokens', 'Underlying', 'Single', 'Transfer', 'Swap']))
+print(ETH_METHOD)
+"""
+
+"""
 
 
 class Crawler:
@@ -30,8 +34,9 @@ class Crawler:
             soup = bs4.BeautifulSoup(response.content, "html.parser")
             table = soup.find('tbody', {'class':'align-middle text-nowrap'})
             if table == None:
-                print("---------------> response:", response)
-                print("---------------> table:", table)
+                logger.warn('%% None type table occurs %%')
+                # print("---------------> response:", response)
+                # print("---------------> table:", table)
                 continue
             for row in table.find_all('tr'):
                 row_data = row.find_all('td')
@@ -50,16 +55,16 @@ class Crawler:
                     data.append(txs_values)
                     break
                 elif txs_values['hash']==prev_first_hash:
-                    print(">>>>>>>>>>>>>>> prev_first_hash:", prev_first_hash)
+                    # print(">>>>>>>>>>>>>>> prev_first_hash:", prev_first_hash)
                     # if only_first: data.append(txs_values) #<----------------------------------- for test
                     match = True
                     break
                 else:
-                    if txs_values['Method'] in ETH_METHOD:
+                    if txs_values['Method'].lower() in ETH_METHOD:
                         data.append(txs_values)
             if match:
                 break
-        print(">>>>>>>>>>>>>>>>>>>>> len(data):",len(data))
+        # print(">>>>>>>>>>>>>>>>>>>>> len(data):",len(data))
         return (data, match)
 
 
@@ -94,8 +99,8 @@ class Crawler:
             if response.status_code != 200: continue
             else:   break
         data, _ = self.extract_txs(response_list=[response], only_first=True)
-        print('>>>>>>>>>>>>>>> first txs hash: ',data[0]['hash']) #<-----------------------------------------------
-        print('>>>>>>>>>>>>>>> first txs block: ',data[0]['Block']) #<-----------------------------------------------
+        # print('>>>>>>>>>>>>>>> first txs hash: ',data[0]['hash']) #<-----------------------------------------------
+        # print('>>>>>>>>>>>>>>> first txs block: ',data[0]['Block']) #<-----------------------------------------------
         # self.store_data_to_user(users=users, coin_data=data, coin=coin) #<-------------------------------------
         prev_first_hash = data[0]['hash'] # set first transaction in first response html file
 
@@ -111,9 +116,9 @@ class Crawler:
             if len(data) > 0:
                 self.store_data_to_user(users=users, coin_data=data, coin=coin)
                 prev_first_hash = data[0]['hash']
-                print("change!!!") #<-----------------------------------------------
+                print(">>>>>>>>>> change!!!") #<-----------------------------------------------
             else:
-                print("not change...") #<-----------------------------------------------
+                print(">>>>>>>>>> not change...") #<-----------------------------------------------
 
 
     def main_process(self) -> None:
@@ -121,12 +126,12 @@ class Crawler:
             self.coin_users_map[coin] = []
 
         for user in get_whitelist():
-            print("%"*100)
+            # print("%"*100)
             cfg = UserConfiguration(user)
             try:
                 cfg.reset_all_alerts()
             except FileNotFoundError:
-                print("%%% ERROR %%%")
+                logger.warn("%% FileNotFoundError occur %%")
                 continue
             user_cfg = cfg.load_config()
             user_coins = user_cfg['coins']

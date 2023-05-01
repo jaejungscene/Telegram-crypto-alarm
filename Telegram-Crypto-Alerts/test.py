@@ -133,11 +133,14 @@ s = "\n - <b>Hash</b>: {alert['hash']}\
 # assert x in L, f"\'{x}\' coin is not available now, Please give me another coin"
 # print("asldkjfs")
 
-from bot.io_client import UserConfiguration, get_whitelist
-print(get_whitelist())
+# from bot.io_client import UserConfiguration, get_whitelist
+# print(get_whitelist())
 
-# UserConfiguration('123').whitelist_user(['ETH'])
-UserConfiguration('123').blacklist_user()
+# # UserConfiguration('123').whitelist_user(['ETH'])
+# UserConfiguration('123').blacklist_user()
 # L = [1]
 # for i in L:
 #     print("asdf")
+
+x = "JAEJUjng"
+print(x.lower())
