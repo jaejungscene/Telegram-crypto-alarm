@@ -15,11 +15,20 @@ import telebot
 
 
 class TelegramBot(TeleBot):
-    def __init__(self, bot_token: str, taapiio_apikey: str = None):
+    def __init__(self, bot_token: str, taapiio_apikey: str = None, owner_id: int=None):
         super().__init__(token=bot_token)
+        self.owner_id = owner_id
         self.indicators_ref_cli = TADatabaseClient()
         self.indicators_db = self.indicators_ref_cli.fetch_ref()
         self.taapiio_cli = None if taapiio_apikey is None else TaapiioProcess(taapiio_apikey)
+
+        @self.message_handler(commands=['stopall'])
+        def stop_all(message: telebot.types.Message):
+            if message.from_user.id == self.owner_id:
+                self.reply_to(message, "Successfully stop entire program")
+            else:
+                self.reply_to(message, "This command is only used for OWNER. And YOU\'RE NOT OWNER^^")
+
 
         @self.message_handler(commands=['id'])
         def on_id(message: telebot.types.Message):

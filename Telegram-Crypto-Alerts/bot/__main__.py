@@ -19,6 +19,7 @@ if __name__ == "__main__":
 
     # Process environment variables
     handle_env()
+    print("OWNER_ID:  ", getenv('OWNER_ID'))
     print("TELEGRAM_BOT_TOKEN: ",getenv('TELEGRAM_BOT_TOKEN'))
     print("TAAPIIO_APIKEY: ",getenv('TAAPIIO_APIKEY'))
     print("TAAPIIO_APIKEY2: ",getenv('TAAPIIO_APIKEY2'))
@@ -26,7 +27,8 @@ if __name__ == "__main__":
 
     # Run the TG bot in a daemon thread
     threading.Thread(target=TelegramBot(bot_token=getenv('TELEGRAM_BOT_TOKEN'),
-                                        taapiio_apikey=getenv('TAAPIIO_APIKEY2')).run, 
+                                        taapiio_apikey=getenv('TAAPIIO_APIKEY2'),
+                                        owner_id=getenv("OWNER_ID")).run, 
                      daemon=True).start()
 
     # # Run the Taapi.io process in a daemon thread
