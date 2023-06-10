@@ -70,8 +70,6 @@ class AlertHandler:
 \n - <b>Block</b>:    {alert['Block']}\
 \n - <b>From</b>:    {alert['From']}\
 \n - <b>To</b>:    {alert['To']}\
-\n - <b>Value</b>:    {alert['Value']}\
-\n - <b>Txn Fee</b>:    {alert['Txn Fee']}\
 \n - <b>URL for detail</b>: {alert['URL for detail']}"
         post_str = "<b>"+pair+"</b>" + string
         return post_str

@@ -14,8 +14,8 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 # Parameters related to Etherium
 ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
 ETH_TXS_CLASS_TAG = "myFnExpandBox_searchVal"
-ETH_METHOD = list(map(lambda x: x.lower(), ['Swap Exact Tokens For Tokens Supporting Fee On Transfer Tokens', 'Underlying', 'Single', 'Transfer', 'Swap']))
-print(ETH_METHOD)
+ETH_IGNORE_METHOD = list(map(lambda x: x.lower(), ['stake', 'withdrawal', 'approve', 'transfer']))
+print(ETH_IGNORE_METHOD)
 """
 
 """
@@ -43,7 +43,7 @@ class Crawler:
                 txs_hash = row_data[1].text.strip()
                 txs_values = {
                     "hash": txs_hash,
-                    "Method": row_data[2].text.strip(),
+                    "Method": row_data[2].text.strip().lower(),
                     "Block": row_data[3].text.strip(),
                     "From": row_data[7].text.strip(),
                     "To": row_data[9].text.strip(),
@@ -60,12 +60,19 @@ class Crawler:
                     match = True
                     break
                 else:
-                    if txs_values['Method'].lower() in ETH_METHOD:
+                    if txs_values['Method'] not in ETH_IGNORE_METHOD:
                         data.append(txs_values)
             if match:
                 break
         # print(">>>>>>>>>>>>>>>>>>>>> len(data):",len(data))
         return (data, match)
+    
+
+    def analyse_each_txs(url: str):
+        response = requests.get(url)
+        if response.status_code == 200:
+            soup = bs4.BeautifulSoup(response.content, "html.parser")
+         
 
 
     def check_response(self, response: requests.models.Response, expected_status=200) -> None:

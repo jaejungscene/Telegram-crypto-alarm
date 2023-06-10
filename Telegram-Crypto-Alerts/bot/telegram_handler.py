@@ -24,11 +24,11 @@ class TelegramBot(TeleBot):
 
         @self.message_handler(commands=['stopall'])
         def stop_all(message: telebot.types.Message):
-            if message.from_user.id == self.owner_id:
+            if message.from_user.id == int(self.owner_id):
                 self.reply_to(message, "Successfully stop entire program")
+
             else:
                 self.reply_to(message, "This command is only used for OWNER. And YOU\'RE NOT OWNER^^")
-
 
         @self.message_handler(commands=['id'])
         def on_id(message: telebot.types.Message):
@@ -58,6 +58,8 @@ class TelegramBot(TeleBot):
             if len(coin_names) > 0:
                 UserConfiguration(message.from_user.id).whitelist_user(coin_names, is_admin=True)
                 self.reply_to(message, f"Successfully started \"{str(coin_names)}\" alert!")
+                logger.info(f"Successfully started \"{str(coin_names)}\" alert!")
+
         
 
         @self.message_handler(commands=['stopalert'])
@@ -66,6 +68,7 @@ class TelegramBot(TeleBot):
             """/stopalert"""
             UserConfiguration(message.from_user.id).blacklist_user()
             self.reply_to(message, f"Successfully stoped alert!")
+            logger.info(f"Successfully stoped alert!")
 
         @self.message_handler(commands=['newalert'])
         @self.is_whitelisted
