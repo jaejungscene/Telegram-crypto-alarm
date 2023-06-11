@@ -2,6 +2,7 @@ import requests
 import bs4
 import os.path as ospt
 import json
+import re
 from time import sleep
 from .io_client import get_whitelist, UserConfiguration
 from .custom_logger import logger
@@ -27,6 +28,7 @@ class Crawler:
         for coin in COINS:
             self.coin_users_map[coin] = []
 
+
     def extract_txs(self, response_list: list, only_first=False, prev_first_hash: str=None) -> tuple:
         match = False
         data = []
@@ -35,8 +37,6 @@ class Crawler:
             table = soup.find('tbody', {'class':'align-middle text-nowrap'})
             if table == None:
                 logger.warn('%% None type table occurs %%')
-                # print("---------------> response:", response)
-                # print("---------------> table:", table)
                 continue
             for row in table.find_all('tr'):
                 row_data = row.find_all('td')
@@ -49,32 +49,55 @@ class Crawler:
                     "To": row_data[9].text.strip(),
                     "Value": row_data[10].text.strip(),
                     "Txn Fee": row_data[11].text.strip(),
-                    "URL for detail": ospt.join(ETH_URL[:-1], txs_hash)
+                    "URL": ospt.join(ETH_URL[:-1], txs_hash)
                 }
                 if only_first:
                     data.append(txs_values)
                     break
                 elif txs_values['hash']==prev_first_hash:
-                    # print(">>>>>>>>>>>>>>> prev_first_hash:", prev_first_hash)
-                    # if only_first: data.append(txs_values) #<----------------------------------- for test
                     match = True
-                    break
+                    return (data, match)
                 else:
-                    if txs_values['Method'] not in ETH_IGNORE_METHOD:
+                    if txs_values['Method'] not in ETH_IGNORE_METHOD\
+                    and self.check_this_txs(txs_values["URL"]) == True:
                         data.append(txs_values)
-            if match:
-                break
-        # print(">>>>>>>>>>>>>>>>>>>>> len(data):",len(data))
         return (data, match)
-    
-
-    def analyse_each_txs(url: str):
-        response = requests.get(url)
-        if response.status_code == 200:
-            soup = bs4.BeautifulSoup(response.content, "html.parser")
          
 
+    def check_this_txs(self, url: str) -> bool:
+        threshold = 1000.0
 
+        response = requests.get(url, headers=HEADERS)
+        if response.status_code == 200:
+            return False # fail
+        
+        soup = bs4.BeautifulSoup(response.content, "html.parser")
+        ERC_check = soup.find(string=re.compile('ERC-20 Tokens'))
+        if ERC_check == None:
+            print('> ERC false')
+            return False # fail
+        
+        ERC_table = ERC_check.parent
+        while True:
+            try:
+                if ERC_table["class"][0] == "row":
+                    break
+            except KeyError:
+                pass
+            ERC_table = ERC_table.parent
+        price_list = ERC_table.find_all('span', class_="text-muted me-1")
+        if len(price_list) == 0:
+            print("> price_list false")
+            return False # fail
+        
+        for elem in price_list:
+            if float(elem.text[2:-1].replace(",", "")) < threshold:
+                print('> price false')
+                return False # fail
+            
+        return True
+            
+            
     def check_response(self, response: requests.models.Response, expected_status=200) -> None:
         if response.status_code == expected_status:
             print("Success!!")
@@ -106,9 +129,6 @@ class Crawler:
             if response.status_code != 200: continue
             else:   break
         data, _ = self.extract_txs(response_list=[response], only_first=True)
-        # print('>>>>>>>>>>>>>>> first txs hash: ',data[0]['hash']) #<-----------------------------------------------
-        # print('>>>>>>>>>>>>>>> first txs block: ',data[0]['Block']) #<-----------------------------------------------
-        # self.store_data_to_user(users=users, coin_data=data, coin=coin) #<-------------------------------------
         prev_first_hash = data[0]['hash'] # set first transaction in first response html file
 
         num_txs = 100
