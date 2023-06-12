@@ -65,13 +65,14 @@ class AlertHandler:
 
 
     def process_txs(self, pair: str, alert: dict) -> str:
-        string = f"\n - <b>Hash</b>: {alert['hash']}\
-\n - <b>Method</b>:    {alert['Method']}\
-\n - <b>Block</b>:    {alert['Block']}\
-\n - <b>From</b>:    {alert['From']}\
-\n - <b>To</b>:    {alert['To']}\
-\n - <b>URL for detail</b>: {alert['URL for detail']}"
-        post_str = "<b>"+pair+"</b>" + string
+#         string_format = f"\n - <b>Hash</b>: {alert['hash']}\
+# \n - <b>Method</b>:    {alert['Method']}\
+# \n - <b>Block</b>:    {alert['Block']}\
+# \n - <b>From</b>:    {alert['From']}\
+# \n - <b>To</b>:    {alert['To']}\
+# \n - <b>URL for detail</b>: {alert['URL for detail']}"
+        string_format = f"\n - {alert['time']} | {alert['values']}만큼 {alert['Method']}"
+        post_str = "<b>"+pair+"</b>" + string_format
         return post_str
 
 

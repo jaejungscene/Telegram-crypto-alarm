@@ -9,6 +9,8 @@ from .custom_logger import logger
 from .static_config import WHITELIST_ROOT
 from collections import OrderedDict
 import threading
+from datetime import datetime, timedelta
+
 
 COINS = ["ETH"] # Every coin to be Available to crawl so far
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'}
@@ -52,23 +54,27 @@ class Crawler:
                     "URL": ospt.join(ETH_URL[:-1], txs_hash)
                 }
                 if only_first:
+                    print("only_first")
                     data.append(txs_values)
                     break
                 elif txs_values['hash']==prev_first_hash:
+                    print("txs_values['hash'] == prev_first_hash")
                     match = True
                     return (data, match)
                 else:
                     if txs_values['Method'] not in ETH_IGNORE_METHOD\
-                    and self.check_this_txs(txs_values["URL"]) == True:
+                    and self.check_this_txs(txs_values) == True:
                         data.append(txs_values)
         return (data, match)
          
 
-    def check_this_txs(self, url: str) -> bool:
+    def check_this_txs(self, txs_values: dict) -> bool:
+        print("-------Start check txs")
         threshold = 1000.0
 
-        response = requests.get(url, headers=HEADERS)
-        if response.status_code == 200:
+        response = requests.get(txs_values["URL"], headers=HEADERS)
+        if response.status_code != 200:
+            print(f"fail requesting from {txs_values['URL']}")
             return False # fail
         
         soup = bs4.BeautifulSoup(response.content, "html.parser")
@@ -90,11 +96,21 @@ class Crawler:
             print("> price_list false")
             return False # fail
         
+        values = []
         for elem in price_list:
-            if float(elem.text[2:-1].replace(",", "")) < threshold:
+            v = float(elem.text[2:-1].replace(",", ""))
+            if v < threshold:
                 print('> price false')
                 return False # fail
-            
+            values.append(v)
+        
+        time_string = soup.find('span', {"id":"showUtcLocalDate"})\
+                    .text\
+                    .split(" ")
+        formatted_str = (datetime.strptime(time_string[0] + " " + time_string[1], "%b-%d-%Y %I:%M:%S") + timedelta(hours=9))\
+                        .strftime("%p %I:%M")
+        txs_values['time'] = formatted_str
+        txs_values['values'] = values
         return True
             
             

@@ -4,15 +4,24 @@ import re
 from datetime import datetime, timedelta
 
 
-URL = "https://etherscan.io/tx/0xaea6720b767b6f7d38aab2aa36e170a268c82698ae6e02a250e8083bea4e0035"
-
+# URL = "https://etherscan.io/tx/0xaea6720b767b6f7d38aab2aa36e170a268c82698ae6e02a250e8083bea4e0035"
+URL = "https://etherscan.io/tx/0x8b4df28716f817f5dbaf2ed3373dd2a5b9f5eb5cd0b87e773b251381004a0c88"
+PROXY_API_KEY = '9d7a8540-5274-4b50-bfb2-4365359afaeb'
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'}
 
 def check_this_txs(txs_values: dict) -> bool:
     threshold = 1000.0
 
-    print(txs_values["URL"])
+    # print(txs_values["URL"])
     response = requests.get(txs_values["URL"], headers=HEADERS)
+    # response = requests.get(
+    #     url='https://proxy.scrapeops.io/v1/',
+    #     params={
+    #         'api_key': PROXY_API_KEY,
+    #         'url': txs_values["URL"], 
+    #     },
+    # )
+
     if response.status_code != 200:
         print('> status false')
         print(response.status_code)
@@ -44,24 +53,33 @@ def check_this_txs(txs_values: dict) -> bool:
     if len(price_list) == 0:
         print("> price_list false")
         return False
+
+    values = []
     for elem in price_list:
-        print(float(elem.text[2:-1].replace(",", "")))
-        if float(elem.text[2:-1].replace(",", "")) < threshold:
+        v = float(elem.text[2:-1].replace(",", ""))
+        if v < threshold:
             print('> price false')
             return False
-    
-    time_string = soup.find('span', {"id":"showUtcLocalDate"}).text
-    datetime_obj = datetime.strptime(time_string[0] + " " + time_string[1], "%b-%d-%Y %I:%M:%S") + timedelta(hours=9)
-    print(datetime_obj)
-    formatted_string = datetime_obj.strftime("%p %I:%M")
-    print(formatted_string)  # Output: 오후 09:39
+        values.append(v)
+
+    time_string = soup.find('span', {"id":"showUtcLocalDate"})\
+                        .text\
+                        .split(" ")
+    formatted_str = (datetime.strptime(time_string[0] + " " + time_string[1], "%b-%d-%Y %I:%M:%S") + timedelta(hours=9))\
+                    .strftime("%p %I:%M")
+
+    txs_values['time'] = formatted_str
+    txs_values['values'] = values
+    print(txs_values)
     return True
 
 
 txs_values = {'URL':URL}
 if check_this_txs(txs_values) == True:
+    print(txs_values)
     print('Pass')
 else:
+    print(txs_values)
     print("Fail")
 
 # response = requests.get(URL, headers=HEADERS)
