@@ -59,7 +59,6 @@ class AlertHandler:
                     logger.warn(f"Failed to send Telegram alert ({post}) to the following IDs: {status[1]}")
                 if config['settings']['send_email_alerts']:
                     self.email_alert_sendgrid(post, configuration)
-                print("="*70)
                 if tg_user_id not in get_whitelist():
                     return
 
@@ -72,7 +71,7 @@ class AlertHandler:
 # \n - <b>To</b>:    {alert['To']}\
 # \n - <b>URL for detail</b>: {alert['URL for detail']}"
         string_format = f"\n - {alert['time']} | {alert['values']}만큼 {alert['Method']}"
-        post_str = "<b>"+pair+"</b>" + string_format
+        post_str = "<b>"+pair+":"+alert['hash']+"</b>" + string_format
         return post_str
 
 

@@ -39,6 +39,7 @@ def check_this_txs(txs_values: dict) -> bool:
     # print(ERC_check.parent.parent["class"])
     # print("--------------------")
     # print(ERC_check.parent.parent.parent["class"])
+
     ERC_table = ERC_check.parent
     while True:
         try:

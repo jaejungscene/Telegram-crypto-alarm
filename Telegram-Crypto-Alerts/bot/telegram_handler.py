@@ -22,6 +22,7 @@ class TelegramBot(TeleBot):
         self.indicators_db = self.indicators_ref_cli.fetch_ref()
         self.taapiio_cli = None if taapiio_apikey is None else TaapiioProcess(taapiio_apikey)
 
+
         @self.message_handler(commands=['stopall'])
         def stop_all(message: telebot.types.Message):
             if message.from_user.id == int(self.owner_id):
@@ -30,15 +31,18 @@ class TelegramBot(TeleBot):
             else:
                 self.reply_to(message, "This command is only used for OWNER. And YOU\'RE NOT OWNER^^")
 
+
         @self.message_handler(commands=['id'])
         def on_id(message: telebot.types.Message):
             """Public function to return someone's Telegram user ID"""
             self.reply_to(message, f"{message.from_user.username}'s Telegram ID:\n{message.from_user.id}")
 
+
         @self.message_handler(commands=['help'])
         @self.is_whitelisted
         def on_help(message):
             self.reply_to(message, get_help_command())
+
 
         @self.message_handler(commands=['startalert'])
         def on_startalert(message: telebot.types.Message):
@@ -57,9 +61,9 @@ class TelegramBot(TeleBot):
             
             if len(coin_names) > 0:
                 UserConfiguration(message.from_user.id).whitelist_user(coin_names, is_admin=True)
-                self.reply_to(message, f"Successfully started \"{str(coin_names)}\" alert!")
+                logger.info(f"Successfully add \"{str(message.from_user.id)}\" in whitelist_user")
                 logger.info(f"Successfully started \"{str(coin_names)}\" alert!")
-
+                self.reply_to(message, f"Successfully started \"{str(coin_names)}\" alert!")
         
 
         @self.message_handler(commands=['stopalert'])
@@ -69,6 +73,7 @@ class TelegramBot(TeleBot):
             UserConfiguration(message.from_user.id).blacklist_user()
             self.reply_to(message, f"Successfully stoped alert!")
             logger.info(f"Successfully stoped alert!")
+
 
         @self.message_handler(commands=['newalert'])
         @self.is_whitelisted

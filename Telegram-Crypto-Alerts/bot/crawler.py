@@ -18,10 +18,8 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
 ETH_TXS_CLASS_TAG = "myFnExpandBox_searchVal"
 ETH_IGNORE_METHOD = list(map(lambda x: x.lower(), ['stake', 'withdrawal', 'approve', 'transfer']))
-print(ETH_IGNORE_METHOD)
-"""
-
-"""
+PROXY_API_KEY = '9d7a8540-5274-4b50-bfb2-4365359afaeb'
+PROXY = False
 
 
 class Crawler:
@@ -29,7 +27,6 @@ class Crawler:
         self.coin_users_map = {}
         for coin in COINS:
             self.coin_users_map[coin] = []
-
 
     def extract_txs(self, response_list: list, only_first=False, prev_first_hash: str=None) -> tuple:
         match = False
@@ -69,10 +66,18 @@ class Crawler:
          
 
     def check_this_txs(self, txs_values: dict) -> bool:
-        print("-------Start check txs")
         threshold = 1000.0
 
-        response = requests.get(txs_values["URL"], headers=HEADERS)
+        if PROXY == False:
+            response = requests.get(txs_values["URL"], headers=HEADERS)
+        else:
+            response = requests.get(
+                url='https://proxy.scrapeops.io/v1/',
+                params={
+                    'api_key': PROXY_API_KEY,
+                    'url': txs_values["URL"], 
+                },
+            )
         if response.status_code != 200:
             print(f"fail requesting from {txs_values['URL']}")
             return False # fail
@@ -111,6 +116,7 @@ class Crawler:
                         .strftime("%p %I:%M")
         txs_values['time'] = formatted_str
         txs_values['values'] = values
+        print(">>>>>>>>>>>>>>>>>  Pass check txs")
         return True
             
             
@@ -169,12 +175,11 @@ class Crawler:
             self.coin_users_map[coin] = []
 
         for user in get_whitelist():
-            # print("%"*100)
             cfg = UserConfiguration(user)
             try:
                 cfg.reset_all_alerts()
-            except FileNotFoundError:
-                logger.warn("%% FileNotFoundError occur %%")
+            except Exception as e:
+                logger.warn(f"$$$ {e} $$$")
                 continue
             user_cfg = cfg.load_config()
             user_coins = user_cfg['coins']
