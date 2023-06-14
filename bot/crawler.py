@@ -9,7 +9,28 @@ from .custom_logger import logger
 from .static_config import WHITELIST_ROOT
 from collections import OrderedDict
 import threading
+import time
 from datetime import datetime, timedelta
+
+
+def string_transform(s:str) -> str:
+    """
+    Set Approval For All  -->  setApprovalForAll
+    """
+    temp = s.split(" ")
+    newStr = ""
+    for i in range(len(temp)):
+        temp[i] = temp[i].lower()
+        if i!=0:
+            temp[i] = temp[i][0].upper() + temp[i][1:]
+        newStr += temp[i]
+    return newStr
+
+
+def string_inverse_transform(input_string):
+    transformed_string = re.sub(r'(?<!^)(?=[A-Z])', ' ', input_string)
+    transformed_string = transformed_string[0].upper() + transformed_string[1:]
+    return transformed_string
 
 
 COINS = ["ETH"] # Every coin to be Available to crawl so far
@@ -17,9 +38,12 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/
 # Parameters related to Etherium
 ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
 ETH_TXS_CLASS_TAG = 'align-middle text-nowrap'
-ETH_IGNORE_METHOD = list(map(lambda x: x.lower(), ['stake', 'withdrawal', 'approve', 'transfer']))
+ETH_IGNORE_METHOD = list(map(string_transform, ['stake', 'withdrawal', 'approve', 'transfer']))
+THRESHOLD = 100.0
+PROXY_URL = "https://proxy.scrapeops.io/v1/"
 PROXY_API_KEY = '9d7a8540-5274-4b50-bfb2-4365359afaeb'
 PROXY = False
+
 
 
 class Crawler:
@@ -27,6 +51,7 @@ class Crawler:
         self.coin_users_map = {}
         for coin in COINS:
             self.coin_users_map[coin] = []
+
 
     def extract_txs(self, response_list: list, only_first=False, prev_first_hash: str=None) -> tuple:
         match = False
@@ -40,14 +65,16 @@ class Crawler:
             for row in table.find_all('tr'):
                 row_data = row.find_all('td')
                 txs_hash = row_data[1].text.strip()
+                txs_time = (datetime.strptime(row_data[4].text.strip(), "%Y-%m-%d %H:%M:%S") + timedelta(hours=9)).strftime("%p %I:%M")
                 txs_values = {
                     "Hash": txs_hash,
-                    "Method": row_data[2].text.strip().lower(),
-                    "Block": row_data[3].text.strip(),
-                    "From": row_data[7].text.strip(),
-                    "To": row_data[9].text.strip(),
-                    "Value": row_data[10].text.strip(),
-                    "Txn Fee": row_data[11].text.strip(),
+                    "Time": txs_time,
+                    "Method": row_data[2].text.strip(),
+                    # "Block": row_data[3].text.strip(),
+                    # "From": row_data[7].div.a['href'].split("/")[-1],
+                    # "To": row_data[9].div.a['href'].split("/")[-1],
+                    # "Value": row_data[10].text.strip(),
+                    # "Txn Fee": row_data[11].text.strip(),
                     "URL": ospt.join(ETH_URL[:-1], txs_hash)
                 }
                 if only_first:
@@ -59,30 +86,51 @@ class Crawler:
                     match = True
                     return (data, match)
                 else:
-                    if txs_values['Method'] not in ETH_IGNORE_METHOD\
-                    and self.check_this_txs(txs_values) == True:
+                    if self.check_this_txs(txs_values) == True:
                         data.append(txs_values)
         return (data, match)
          
 
-    def check_this_txs(self, txs_values: dict) -> bool:
-        threshold = 1000.0
+    def get_requests(self, url: str, **param) -> requests.Response:
+        if len(param) != 0:
+            url = f"{url}?ps={param['num_txs']}&p={param['num_page']}"
 
         if PROXY == False:
-            response = requests.get(txs_values["URL"], headers=HEADERS)
+            response = requests.get(url, headers=HEADERS)
         else:
             response = requests.get(
-                url='https://proxy.scrapeops.io/v1/',
+                url=PROXY_URL,
                 params={
                     'api_key': PROXY_API_KEY,
-                    'url': txs_values["URL"], 
+                    'url': url, 
                 },
             )
+        return response
+
+
+    def check_this_txs(self, txs_values: dict) -> bool:
+        time.sleep(0.25)
+        response = self.get_requests(txs_values["URL"])
         if response.status_code != 200:
             print(f"fail requesting from {txs_values['URL']}")
             return False # fail
-        
+
+        ########## Test Logic ###########
+        # file = "./ApproveFile.html"
+        # file = "./setApprovalForAll.html"
+        # file = "./TransferFile.html"
+        # with open(file, "rb") as f:
+        #     response = f.read()
+        # soup = bs4.BeautifulSoup(response, "html.parser")
+        #################################
+
         soup = bs4.BeautifulSoup(response.content, "html.parser")
+        methodResult = soup.find(string=re.compile("Function: "))
+        methodResult = re.split('\n| |\(', methodResult.text)[1] if methodResult is not None else None
+        if methodResult is None or methodResult in ETH_IGNORE_METHOD:
+            print('> Method false')
+            return False # fail
+
         ERC_check = soup.find(string=re.compile('ERC-20 Tokens'))
         if ERC_check == None:
             print('> ERC false')
@@ -101,26 +149,22 @@ class Crawler:
             print("> price_list false")
             return False # fail
         
-        values = []
+        max_values = -1
         for elem in price_list:
             v = float(elem.text[2:-1].replace(",", ""))
-            if v < threshold:
-                print('> price false')
-                return False # fail
-            values.append(v)
-        
-        time_string = soup.find('span', {"id":"showUtcLocalDate"})\
-                    .text\
-                    .split(" ")
-        formatted_str = (datetime.strptime(time_string[0] + " " + time_string[1], "%b-%d-%Y %I:%M:%S") + timedelta(hours=9))\
-                        .strftime("%p %I:%M")
-        txs_values['time'] = formatted_str
-        txs_values['values'] = values
+            if v > THRESHOLD and v > max_values:
+                max_values = v
+        if max_values == -1:
+            print('> price false')
+            return False # fail
+
+        txs_values["Method"] = string_inverse_transform(methodResult)
+        txs_values['Exchanged Max Values'] = max_values
         print(">>>>>>>>>>>>>>>>>  Pass check txs")
         return True
             
             
-    def check_response(self, response: requests.models.Response, expected_status=200) -> None:
+    def check_response(self, response: requests.Response, expected_status=200) -> None:
         if response.status_code == expected_status:
             print("Success!!")
         else:
@@ -147,24 +191,26 @@ class Crawler:
 
         # receive and process the first response
         while True:
-            response = requests.get(ETH_URL+f"?ps={num_txs}&p={num_page}", headers=HEADERS)
+            response = self.get_requests(ETH_URL, num_txs=num_txs, num_page=num_page)
+            # response = requests.get(ETH_URL+f"?ps={num_txs}&p={num_page}", headers=HEADERS)
             if response.status_code != 200: continue
             else:   break
         data, _ = self.extract_txs(response_list=[response], only_first=True)
-        prev_first_hash = data[0]['hash'] # set first transaction in first response html file
+        prev_first_hash = data[0]['Hash'] # set first transaction in first response html file
 
         num_txs = 100
         while True and len(get_whitelist()) > 0:
             # keep receiving the response
             response_list = []
             while len(response_list) < request_num:
-                response = requests.get(ETH_URL+f"?ps={num_txs}&p={len(response_list)+1}", headers=HEADERS)
+                response = self.get_requests(ETH_URL, num_txs=num_txs, num_page=len(response_list)+1)
+                # response = requests.get(ETH_URL+f"?ps={num_txs}&p={len(response_list)+1}", headers=HEADERS)
                 if response.status_code == 200:
                     response_list.append(response)
             data, _ = self.extract_txs(response_list=response_list, only_first=False, prev_first_hash=prev_first_hash)
             if len(data) > 0:
                 self.store_data_to_user(users=users, coin_data=data, coin=coin)
-                prev_first_hash = data[0]['hash']
+                prev_first_hash = data[0]['Hash']
                 print(">>>>>>>>>> change!!!") #<-----------------------------------------------
             else:
                 print(">>>>>>>>>> not change...") #<-----------------------------------------------
@@ -190,7 +236,6 @@ class Crawler:
             if coin == "ETH" and len(users) > 0:
                 self.crawl_store_ether(users)
                 # threading.Thread(target=self.crawl_store_ether, daemon=True, args=[users]).start()
-
 
 
     def run(self) -> None:

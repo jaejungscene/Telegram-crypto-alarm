@@ -70,8 +70,8 @@ class AlertHandler:
 # \n - <b>From</b>:    {alert['From']}\
 # \n - <b>To</b>:    {alert['To']}\
 # \n - <b>URL for detail</b>: {alert['URL for detail']}"
-        string_format = f"\n - {alert['time']} | {alert['values']}만큼 {alert['Method']}"
-        post_str = "<b>"+pair+":"+alert['hash']+"</b>" + string_format
+        string_format = f"\n - {alert['Time']} 최대 {alert['Exchanged Max Values']}만큼 {alert['Method']}"
+        post_str = "<b>"+pair+":"+alert['Hash']+"</b>" + string_format
         return post_str
 
 

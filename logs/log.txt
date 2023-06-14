@@ -1439,3 +1439,49 @@ crawler : WARNING : 2023-06-13 01:08:00,799 : $$$ [Errno 2] No such file or dire
 crawler : WARNING : 2023-06-13 01:08:00,800 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json' $$$
 alert_handler : WARNING : 2023-06-14 01:50:42,137 : AlertHandler started at 2023-06-14 01:50:42.137886 UTC+0
 telegram_handler : WARNING : 2023-06-14 01:50:43,661 : Jaejung_CryptoTrackerBot started at 2023-06-14 01:50:43.660995 UTC+0
+alert_handler : WARNING : 2023-06-14 06:44:18,299 : AlertHandler started at 2023-06-14 06:44:18.299200 UTC+0
+telegram_handler : WARNING : 2023-06-14 06:44:19,058 : Jaejung_CryptoTrackerBot started at 2023-06-14 06:44:19.058639 UTC+0
+crawler : WARNING : 2023-06-14 06:44:39,186 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+crawler : CRITICAL : 2023-06-14 06:44:39,188 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 245, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 237, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 194, in crawl_store_ether
+    response = self.get_requests(ETH_URL, num_txs=num_txs, num_page=num_page)
+TypeError: Crawler.get_requests() takes 1 positional argument but 2 were given
+alert_handler : WARNING : 2023-06-14 06:45:11,486 : AlertHandler started at 2023-06-14 06:45:11.486300 UTC+0
+telegram_handler : WARNING : 2023-06-14 06:45:12,239 : Jaejung_CryptoTrackerBot started at 2023-06-14 06:45:12.239343 UTC+0
+crawler : WARNING : 2023-06-14 06:45:17,146 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+crawler : CRITICAL : 2023-06-14 06:45:17,148 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 245, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 237, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 194, in crawl_store_ether
+    response = self.get_requests(ETH_URL, num_txs=num_txs, num_page=num_page)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 96, in get_requests
+    url = f"{url}?ps={param['num_txs']}&p={len(param['num_page'])}"
+TypeError: object of type 'int' has no len()
+alert_handler : WARNING : 2023-06-14 06:45:42,317 : AlertHandler started at 2023-06-14 06:45:42.317772 UTC+0
+telegram_handler : WARNING : 2023-06-14 06:45:43,075 : Jaejung_CryptoTrackerBot started at 2023-06-14 06:45:43.075521 UTC+0
+crawler : WARNING : 2023-06-14 06:45:47,795 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+crawler : WARNING : 2023-06-14 06:45:47,795 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+crawler : WARNING : 2023-06-14 06:45:47,796 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+alert_handler : CRITICAL : 2023-06-14 06:51:03,607 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 285, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 88, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 55, in poll_user_alerts
+    post = self.process_txs(pair, alert)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 74, in process_txs
+    post_str = "<b>"+pair+":"+alert['hash']+"</b>" + string_format
+KeyError: 'hash'

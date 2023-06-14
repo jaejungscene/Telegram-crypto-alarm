@@ -12,3 +12,7 @@ print(datetime_obj)
 formatted_string = datetime_obj.strftime("%p %I:%M")
 
 print(formatted_string)  # Output: 오후 09:39
+print("-"*100)
+
+txs_time = (datetime.strptime("2023-06-24 13:23:11", "%Y-%m-%d %H:%M:%S") + timedelta(hours=9))
+print(txs_time)
