@@ -16,7 +16,7 @@ COINS = ["ETH"] # Every coin to be Available to crawl so far
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36'}
 # Parameters related to Etherium
 ETH_URL = "https://etherscan.io/txs" # Ehterscand Transcation URL
-ETH_TXS_CLASS_TAG = "myFnExpandBox_searchVal"
+ETH_TXS_CLASS_TAG = 'align-middle text-nowrap'
 ETH_IGNORE_METHOD = list(map(lambda x: x.lower(), ['stake', 'withdrawal', 'approve', 'transfer']))
 PROXY_API_KEY = '9d7a8540-5274-4b50-bfb2-4365359afaeb'
 PROXY = False
@@ -33,7 +33,7 @@ class Crawler:
         data = []
         for response in response_list:
             soup = bs4.BeautifulSoup(response.content, "html.parser")
-            table = soup.find('tbody', {'class':'align-middle text-nowrap'})
+            table = soup.find('tbody', {'class':ETH_TXS_CLASS_TAG})
             if table == None:
                 logger.warn('%% None type table occurs %%')
                 continue
@@ -41,7 +41,7 @@ class Crawler:
                 row_data = row.find_all('td')
                 txs_hash = row_data[1].text.strip()
                 txs_values = {
-                    "hash": txs_hash,
+                    "Hash": txs_hash,
                     "Method": row_data[2].text.strip().lower(),
                     "Block": row_data[3].text.strip(),
                     "From": row_data[7].text.strip(),
@@ -54,8 +54,8 @@ class Crawler:
                     print("only_first")
                     data.append(txs_values)
                     break
-                elif txs_values['hash']==prev_first_hash:
-                    print("txs_values['hash'] == prev_first_hash")
+                elif txs_values['Hash']==prev_first_hash:
+                    print("txs_values['Hash'] == prev_first_hash")
                     match = True
                     return (data, match)
                 else:

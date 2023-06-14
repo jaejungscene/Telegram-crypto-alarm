@@ -1,0 +1,1441 @@
+indicators : WARNING : 2023-04-20 05:34:33,456 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 05:34:33,457 : AlertHandler started at 2023-04-20 05:34:33.457189 UTC+0
+telegram_handler : WARNING : 2023-04-20 05:34:34,293 : Jaejung_CryptoTrackerBot started at 2023-04-20 05:34:34.293360 UTC+0
+indicators : WARNING : 2023-04-20 06:07:18,609 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:07:18,610 : AlertHandler started at 2023-04-20 06:07:18.610528 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:07:19,426 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:07:19.426262 UTC+0
+indicators : WARNING : 2023-04-20 06:08:53,383 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:08:53,384 : AlertHandler started at 2023-04-20 06:08:53.384577 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:08:54,186 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:08:54.186358 UTC+0
+indicators : WARNING : 2023-04-20 06:17:57,959 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:17:57,961 : AlertHandler started at 2023-04-20 06:17:57.960987 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:17:58,784 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:17:58.784244 UTC+0
+indicators : WARNING : 2023-04-20 06:18:05,830 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:18:05,830 : AlertHandler started at 2023-04-20 06:18:05.830918 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:18:06,682 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:18:06.682573 UTC+0
+indicators : WARNING : 2023-04-20 06:18:18,866 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:18:18,867 : AlertHandler started at 2023-04-20 06:18:18.867525 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:18:19,674 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:18:19.674459 UTC+0
+indicators : WARNING : 2023-04-20 06:20:17,450 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:20:17,451 : AlertHandler started at 2023-04-20 06:20:17.451235 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:20:18,336 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:20:18.336021 UTC+0
+indicators : WARNING : 2023-04-20 06:21:00,705 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:21:00,706 : AlertHandler started at 2023-04-20 06:21:00.706665 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:21:01,575 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:21:01.575511 UTC+0
+indicators : WARNING : 2023-04-20 06:34:04,207 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:34:04,207 : AlertHandler started at 2023-04-20 06:34:04.207769 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:34:05,049 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:34:05.049288 UTC+0
+indicators : WARNING : 2023-04-20 06:48:55,519 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:48:55,520 : AlertHandler started at 2023-04-20 06:48:55.520194 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:48:56,365 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:48:56.365564 UTC+0
+indicators : WARNING : 2023-04-20 06:59:15,005 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:59:15,006 : AlertHandler started at 2023-04-20 06:59:15.006749 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:59:15,910 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:59:15.910521 UTC+0
+indicators : WARNING : 2023-04-20 06:59:53,744 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 06:59:53,745 : AlertHandler started at 2023-04-20 06:59:53.745660 UTC+0
+telegram_handler : WARNING : 2023-04-20 06:59:54,580 : Jaejung_CryptoTrackerBot started at 2023-04-20 06:59:54.580308 UTC+0
+indicators : WARNING : 2023-04-20 07:00:43,870 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:00:43,871 : AlertHandler started at 2023-04-20 07:00:43.871076 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:00:44,719 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:00:44.719250 UTC+0
+indicators : WARNING : 2023-04-20 07:05:04,973 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:05:04,973 : AlertHandler started at 2023-04-20 07:05:04.973779 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:05:05,830 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:05:05.830144 UTC+0
+indicators : WARNING : 2023-04-20 07:05:32,446 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:05:32,447 : AlertHandler started at 2023-04-20 07:05:32.447762 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:05:33,273 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:05:33.273749 UTC+0
+indicators : WARNING : 2023-04-20 07:05:42,559 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:05:42,560 : AlertHandler started at 2023-04-20 07:05:42.559989 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:05:43,404 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:05:43.404536 UTC+0
+indicators : WARNING : 2023-04-20 07:05:51,176 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:05:51,176 : AlertHandler started at 2023-04-20 07:05:51.176813 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:05:52,027 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:05:52.027497 UTC+0
+indicators : WARNING : 2023-04-20 07:09:44,102 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:09:44,103 : AlertHandler started at 2023-04-20 07:09:44.103586 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:09:44,943 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:09:44.943117 UTC+0
+indicators : WARNING : 2023-04-20 07:09:56,293 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:09:56,294 : AlertHandler started at 2023-04-20 07:09:56.294501 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:09:57,122 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:09:57.122353 UTC+0
+indicators : WARNING : 2023-04-20 07:11:42,644 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:11:42,644 : AlertHandler started at 2023-04-20 07:11:42.644832 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:11:43,475 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:11:43.475044 UTC+0
+indicators : WARNING : 2023-04-20 07:12:03,203 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:12:03,203 : AlertHandler started at 2023-04-20 07:12:03.203855 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:12:04,056 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:12:04.056822 UTC+0
+indicators : WARNING : 2023-04-20 07:12:17,570 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:12:17,571 : AlertHandler started at 2023-04-20 07:12:17.571400 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:12:18,384 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:12:18.384315 UTC+0
+indicators : WARNING : 2023-04-20 07:12:43,998 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:12:43,999 : AlertHandler started at 2023-04-20 07:12:43.999348 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:12:44,838 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:12:44.838004 UTC+0
+indicators : WARNING : 2023-04-20 07:12:53,180 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:12:53,180 : AlertHandler started at 2023-04-20 07:12:53.180576 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:12:54,014 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:12:54.013960 UTC+0
+indicators : WARNING : 2023-04-20 07:13:23,230 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:13:23,231 : AlertHandler started at 2023-04-20 07:13:23.230909 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:13:24,117 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:13:24.117277 UTC+0
+indicators : WARNING : 2023-04-20 07:14:26,569 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-20 07:14:26,570 : AlertHandler started at 2023-04-20 07:14:26.570646 UTC+0
+telegram_handler : WARNING : 2023-04-20 07:14:27,388 : Jaejung_CryptoTrackerBot started at 2023-04-20 07:14:27.388663 UTC+0
+indicators : WARNING : 2023-04-21 01:54:05,063 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 01:54:05,064 : AlertHandler started at 2023-04-21 01:54:05.064396 UTC+0
+telegram_handler : WARNING : 2023-04-21 01:54:06,684 : Jaejung_CryptoTrackerBot started at 2023-04-21 01:54:06.684457 UTC+0
+indicators : WARNING : 2023-04-21 01:55:57,555 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 01:55:57,557 : AlertHandler started at 2023-04-21 01:55:57.556984 UTC+0
+telegram_handler : WARNING : 2023-04-21 01:55:58,445 : Jaejung_CryptoTrackerBot started at 2023-04-21 01:55:58.445129 UTC+0
+indicators : WARNING : 2023-04-21 01:58:49,986 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 01:58:49,987 : AlertHandler started at 2023-04-21 01:58:49.987509 UTC+0
+telegram_handler : WARNING : 2023-04-21 01:58:50,815 : Jaejung_CryptoTrackerBot started at 2023-04-21 01:58:50.815420 UTC+0
+indicators : WARNING : 2023-04-21 01:59:09,924 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 01:59:09,925 : AlertHandler started at 2023-04-21 01:59:09.925623 UTC+0
+telegram_handler : WARNING : 2023-04-21 01:59:10,783 : Jaejung_CryptoTrackerBot started at 2023-04-21 01:59:10.783580 UTC+0
+indicators : WARNING : 2023-04-21 02:00:39,252 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 02:00:39,253 : AlertHandler started at 2023-04-21 02:00:39.253479 UTC+0
+telegram_handler : WARNING : 2023-04-21 02:00:40,105 : Jaejung_CryptoTrackerBot started at 2023-04-21 02:00:40.105015 UTC+0
+indicators : WARNING : 2023-04-21 02:01:44,898 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 02:01:44,899 : AlertHandler started at 2023-04-21 02:01:44.899622 UTC+0
+telegram_handler : WARNING : 2023-04-21 02:01:45,739 : Jaejung_CryptoTrackerBot started at 2023-04-21 02:01:45.739587 UTC+0
+indicators : WARNING : 2023-04-21 02:02:14,660 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 02:02:14,660 : AlertHandler started at 2023-04-21 02:02:14.660716 UTC+0
+telegram_handler : WARNING : 2023-04-21 02:02:15,504 : Jaejung_CryptoTrackerBot started at 2023-04-21 02:02:15.504675 UTC+0
+indicators : WARNING : 2023-04-21 02:03:48,496 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 02:03:48,497 : AlertHandler started at 2023-04-21 02:03:48.497225 UTC+0
+telegram_handler : WARNING : 2023-04-21 02:03:49,319 : Jaejung_CryptoTrackerBot started at 2023-04-21 02:03:49.319094 UTC+0
+indicators : WARNING : 2023-04-21 02:11:05,574 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 02:11:05,575 : AlertHandler started at 2023-04-21 02:11:05.575509 UTC+0
+telegram_handler : WARNING : 2023-04-21 02:11:06,417 : Jaejung_CryptoTrackerBot started at 2023-04-21 02:11:06.417366 UTC+0
+indicators : WARNING : 2023-04-21 02:22:02,766 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 02:22:02,766 : AlertHandler started at 2023-04-21 02:22:02.766941 UTC+0
+telegram_handler : WARNING : 2023-04-21 02:22:03,580 : Jaejung_CryptoTrackerBot started at 2023-04-21 02:22:03.580763 UTC+0
+indicators : WARNING : 2023-04-21 02:23:00,651 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 02:23:00,651 : AlertHandler started at 2023-04-21 02:23:00.651957 UTC+0
+telegram_handler : WARNING : 2023-04-21 02:23:01,489 : Jaejung_CryptoTrackerBot started at 2023-04-21 02:23:01.489413 UTC+0
+indicators : WARNING : 2023-04-21 03:11:56,139 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 03:11:56,140 : AlertHandler started at 2023-04-21 03:11:56.140018 UTC+0
+telegram_handler : WARNING : 2023-04-21 03:11:56,968 : Jaejung_CryptoTrackerBot started at 2023-04-21 03:11:56.968591 UTC+0
+indicators : WARNING : 2023-04-21 03:13:12,928 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 03:13:12,928 : AlertHandler started at 2023-04-21 03:13:12.928738 UTC+0
+telegram_handler : WARNING : 2023-04-21 03:13:13,766 : Jaejung_CryptoTrackerBot started at 2023-04-21 03:13:13.766268 UTC+0
+indicators : WARNING : 2023-04-21 03:27:56,854 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 03:27:56,855 : AlertHandler started at 2023-04-21 03:27:56.855495 UTC+0
+telegram_handler : WARNING : 2023-04-21 03:27:57,686 : Jaejung_CryptoTrackerBot started at 2023-04-21 03:27:57.686767 UTC+0
+indicators : WARNING : 2023-04-21 05:29:03,469 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:29:03,470 : AlertHandler started at 2023-04-21 05:29:03.470019 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:29:04,321 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:29:04.321175 UTC+0
+indicators : WARNING : 2023-04-21 05:38:34,557 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:38:34,558 : AlertHandler started at 2023-04-21 05:38:34.558584 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:38:35,418 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:38:35.418148 UTC+0
+indicators : WARNING : 2023-04-21 05:41:18,744 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:41:18,745 : AlertHandler started at 2023-04-21 05:41:18.745354 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:41:19,602 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:41:19.602487 UTC+0
+indicators : WARNING : 2023-04-21 05:42:06,808 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:42:06,809 : AlertHandler started at 2023-04-21 05:42:06.809474 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:42:07,670 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:42:07.670063 UTC+0
+indicators : WARNING : 2023-04-21 05:42:54,441 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:42:54,441 : AlertHandler started at 2023-04-21 05:42:54.441861 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:42:55,313 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:42:55.313197 UTC+0
+indicators : WARNING : 2023-04-21 05:46:25,073 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:46:25,073 : AlertHandler started at 2023-04-21 05:46:25.073784 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:46:25,874 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:46:25.874429 UTC+0
+indicators : WARNING : 2023-04-21 05:55:55,868 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:55:55,869 : AlertHandler started at 2023-04-21 05:55:55.869061 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:55:56,756 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:55:56.755921 UTC+0
+indicators : WARNING : 2023-04-21 05:56:52,769 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 05:56:52,770 : AlertHandler started at 2023-04-21 05:56:52.770484 UTC+0
+telegram_handler : WARNING : 2023-04-21 05:56:53,594 : Jaejung_CryptoTrackerBot started at 2023-04-21 05:56:53.594443 UTC+0
+indicators : WARNING : 2023-04-21 06:12:41,085 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 06:12:41,085 : AlertHandler started at 2023-04-21 06:12:41.085895 UTC+0
+telegram_handler : WARNING : 2023-04-21 06:12:41,927 : Jaejung_CryptoTrackerBot started at 2023-04-21 06:12:41.927180 UTC+0
+indicators : WARNING : 2023-04-21 06:14:02,245 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 06:14:02,246 : AlertHandler started at 2023-04-21 06:14:02.246093 UTC+0
+telegram_handler : WARNING : 2023-04-21 06:14:03,103 : Jaejung_CryptoTrackerBot started at 2023-04-21 06:14:03.103373 UTC+0
+indicators : WARNING : 2023-04-21 06:27:28,817 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 06:27:28,817 : AlertHandler started at 2023-04-21 06:27:28.817831 UTC+0
+telegram_handler : WARNING : 2023-04-21 06:27:29,637 : Jaejung_CryptoTrackerBot started at 2023-04-21 06:27:29.636976 UTC+0
+indicators : WARNING : 2023-04-21 06:39:05,427 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 06:39:05,428 : AlertHandler started at 2023-04-21 06:39:05.428120 UTC+0
+telegram_handler : WARNING : 2023-04-21 06:39:06,280 : Jaejung_CryptoTrackerBot started at 2023-04-21 06:39:06.280378 UTC+0
+indicators : WARNING : 2023-04-21 06:39:21,462 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 06:39:21,463 : AlertHandler started at 2023-04-21 06:39:21.463354 UTC+0
+telegram_handler : WARNING : 2023-04-21 06:39:22,301 : Jaejung_CryptoTrackerBot started at 2023-04-21 06:39:22.300908 UTC+0
+indicators : WARNING : 2023-04-21 06:46:39,746 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 06:46:39,747 : AlertHandler started at 2023-04-21 06:46:39.747577 UTC+0
+telegram_handler : WARNING : 2023-04-21 06:46:40,594 : Jaejung_CryptoTrackerBot started at 2023-04-21 06:46:40.594393 UTC+0
+indicators : WARNING : 2023-04-21 06:47:16,249 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 06:47:16,250 : AlertHandler started at 2023-04-21 06:47:16.250122 UTC+0
+telegram_handler : WARNING : 2023-04-21 06:47:17,102 : Jaejung_CryptoTrackerBot started at 2023-04-21 06:47:17.102213 UTC+0
+indicators : WARNING : 2023-04-21 12:15:54,411 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:15:54,411 : AlertHandler started at 2023-04-21 12:15:54.411922 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:15:55,253 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:15:55.253146 UTC+0
+indicators : WARNING : 2023-04-21 12:19:18,377 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:19:18,378 : AlertHandler started at 2023-04-21 12:19:18.378367 UTC+0
+indicators : WARNING : 2023-04-21 12:31:03,425 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:31:03,425 : AlertHandler started at 2023-04-21 12:31:03.425919 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:31:04,277 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:31:04.277507 UTC+0
+indicators : WARNING : 2023-04-21 12:31:06,910 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:31:06,911 : AlertHandler started at 2023-04-21 12:31:06.911637 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:31:07,803 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:31:07.803390 UTC+0
+indicators : WARNING : 2023-04-21 12:35:32,305 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:35:32,306 : AlertHandler started at 2023-04-21 12:35:32.306326 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:35:33,154 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:35:33.154704 UTC+0
+indicators : WARNING : 2023-04-21 12:39:31,813 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:39:31,814 : AlertHandler started at 2023-04-21 12:39:31.814509 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:39:32,680 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:39:32.680121 UTC+0
+indicators : WARNING : 2023-04-21 12:40:52,002 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:40:52,004 : AlertHandler started at 2023-04-21 12:40:52.004097 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:40:52,852 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:40:52.852581 UTC+0
+indicators : WARNING : 2023-04-21 12:41:50,978 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:41:50,979 : AlertHandler started at 2023-04-21 12:41:50.979052 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:41:51,846 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:41:51.846807 UTC+0
+indicators : WARNING : 2023-04-21 12:42:40,701 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-21 12:42:40,702 : AlertHandler started at 2023-04-21 12:42:40.702332 UTC+0
+telegram_handler : WARNING : 2023-04-21 12:42:41,568 : Jaejung_CryptoTrackerBot started at 2023-04-21 12:42:41.568155 UTC+0
+indicators : WARNING : 2023-04-24 05:39:28,350 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 05:39:28,351 : AlertHandler started at 2023-04-24 05:39:28.351389 UTC+0
+telegram_handler : WARNING : 2023-04-24 05:39:30,159 : Jaejung_CryptoTrackerBot started at 2023-04-24 05:39:30.159812 UTC+0
+indicators : WARNING : 2023-04-24 05:42:40,800 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 05:42:40,801 : AlertHandler started at 2023-04-24 05:42:40.801117 UTC+0
+telegram_handler : WARNING : 2023-04-24 05:42:41,667 : Jaejung_CryptoTrackerBot started at 2023-04-24 05:42:41.667486 UTC+0
+indicators : WARNING : 2023-04-24 06:14:01,453 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:14:01,453 : AlertHandler started at 2023-04-24 06:14:01.453851 UTC+0
+telegram_handler : WARNING : 2023-04-24 06:14:02,265 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:14:02.265116 UTC+0
+indicators : WARNING : 2023-04-24 06:14:35,525 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:14:35,526 : AlertHandler started at 2023-04-24 06:14:35.526578 UTC+0
+telegram_handler : WARNING : 2023-04-24 06:14:36,356 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:14:36.356561 UTC+0
+indicators : WARNING : 2023-04-24 06:26:00,852 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:26:00,853 : AlertHandler started at 2023-04-24 06:26:00.852962 UTC+0
+indicators : CRITICAL : 2023-04-24 06:26:00,854 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 362, in run
+    self.mainloop()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 302, in mainloop
+    self.agg_cli.build_ta_aggregate(self.ta_db)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 202, in build_ta_aggregate
+    if alert['interval'] not in agg[symbol].keys():
+KeyError: 'interval'
+alert_handler : CRITICAL : 2023-04-24 06:26:00,855 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 304, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 111, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 66, in poll_user_alerts
+    if condition:  # If there is a condition satisfied
+NameError: name 'condition' is not defined
+telegram_handler : WARNING : 2023-04-24 06:26:01,745 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:26:01.745595 UTC+0
+indicators : WARNING : 2023-04-24 06:26:15,196 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:26:15,197 : AlertHandler started at 2023-04-24 06:26:15.197465 UTC+0
+indicators : CRITICAL : 2023-04-24 06:26:15,198 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 362, in run
+    self.mainloop()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 302, in mainloop
+    self.agg_cli.build_ta_aggregate(self.ta_db)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 202, in build_ta_aggregate
+    if alert['interval'] not in agg[symbol].keys():
+KeyError: 'interval'
+alert_handler : CRITICAL : 2023-04-24 06:26:15,201 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 127, in get_indicator
+    return self.fetch_ref()[_id.upper()][key]
+KeyError: 'PRICE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 304, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 111, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 58, in poll_user_alerts
+    condition, value, post_string = self.get_technical_indicator(pair, alert)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 255, in get_technical_indicator
+    formatted_alert = self.ta_agg_cli.format_alert_for_match(alert)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 235, in format_alert_for_match
+    for param, _, default_value in self.indicators_db_cli.get_indicator(_id=alert['indicator'].upper(), key="params"):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 131, in get_indicator
+    raise ValueError(f"'{_id}' is an invalid indicator ID")
+ValueError: 'PRICE' is an invalid indicator ID
+telegram_handler : WARNING : 2023-04-24 06:26:16,088 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:26:16.088754 UTC+0
+indicators : WARNING : 2023-04-24 06:40:24,783 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:40:24,783 : AlertHandler started at 2023-04-24 06:40:24.783839 UTC+0
+indicators : CRITICAL : 2023-04-24 06:40:24,784 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 362, in run
+    self.mainloop()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 302, in mainloop
+    self.agg_cli.build_ta_aggregate(self.ta_db)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 202, in build_ta_aggregate
+    if alert['interval'] not in agg[symbol].keys():
+KeyError: 'interval'
+telegram_handler : WARNING : 2023-04-24 06:40:25,687 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:40:25.687109 UTC+0
+indicators : WARNING : 2023-04-24 06:43:37,058 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:43:37,059 : AlertHandler started at 2023-04-24 06:43:37.059540 UTC+0
+telegram_handler : WARNING : 2023-04-24 06:43:37,970 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:43:37.970303 UTC+0
+indicators : WARNING : 2023-04-24 06:44:47,983 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:44:47,984 : AlertHandler started at 2023-04-24 06:44:47.984362 UTC+0
+telegram_handler : WARNING : 2023-04-24 06:44:48,830 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:44:48.830334 UTC+0
+indicators : WARNING : 2023-04-24 06:45:08,197 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:45:08,198 : AlertHandler started at 2023-04-24 06:45:08.198094 UTC+0
+telegram_handler : WARNING : 2023-04-24 06:45:09,018 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:45:09.018221 UTC+0
+indicators : WARNING : 2023-04-24 06:46:26,375 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-24 06:46:26,376 : AlertHandler started at 2023-04-24 06:46:26.376550 UTC+0
+telegram_handler : WARNING : 2023-04-24 06:46:27,217 : Jaejung_CryptoTrackerBot started at 2023-04-24 06:46:27.217542 UTC+0
+crawler : CRITICAL : 2023-04-26 00:33:27,042 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 94, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 89, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 57, in crawl_store_ether
+    self.check_response(response)
+TypeError: Crawler.check_response() takes 1 positional argument but 2 were given
+crawler : CRITICAL : 2023-04-26 00:35:03,594 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 95, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 90, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 57, in crawl_store_ether
+    print(len(response))
+TypeError: object of type 'Response' has no len()
+crawler : CRITICAL : 2023-04-26 00:39:11,052 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 94, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 89, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 57, in crawl_store_ether
+    self.check_response(response)
+TypeError: Crawler.check_response() takes 1 positional argument but 2 were given
+crawler : CRITICAL : 2023-04-26 00:39:37,071 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 95, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 90, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 58, in crawl_store_ether
+    self.check_response(response)
+TypeError: Crawler.check_response() takes 1 positional argument but 2 were given
+crawler : CRITICAL : 2023-04-26 00:40:22,220 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 99, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 94, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 64, in crawl_store_ether
+    data_dict = self.extract_txs(response)
+TypeError: Crawler.extract_txs() takes 1 positional argument but 2 were given
+crawler : CRITICAL : 2023-04-26 00:41:54,935 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 99, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 94, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 62, in crawl_store_ether
+    self.check_response(response)
+TypeError: Crawler.check_response() takes 1 positional argument but 2 were given
+crawler : CRITICAL : 2023-04-26 00:44:23,183 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 94, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 89, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 57, in crawl_store_ether
+    self.check_response(response, 200)
+TypeError: Crawler.check_response() takes from 1 to 2 positional arguments but 3 were given
+crawler : CRITICAL : 2023-04-26 00:44:39,271 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 94, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 89, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 57, in crawl_store_ether
+    self.check_response(response)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 44, in check_response
+    if response.status_code == expected_status:
+AttributeError: 'Crawler' object has no attribute 'status_code'
+crawler : CRITICAL : 2023-04-26 00:45:59,933 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 96, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 91, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 59, in crawl_store_ether
+    self.check_response(response)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 44, in check_response
+    if response.status_code == expected_status:
+AttributeError: 'Crawler' object has no attribute 'status_code'
+crawler : CRITICAL : 2023-04-26 00:48:16,930 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 94, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 89, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 57, in crawl_store_ether
+    self.check_response(response, 200)
+TypeError: Crawler.check_response() takes from 1 to 2 positional arguments but 3 were given
+indicators : WARNING : 2023-04-26 05:22:37,536 : Taapi.io process started.
+alert_handler : WARNING : 2023-04-26 05:22:37,537 : AlertHandler started at 2023-04-26 05:22:37.537252 UTC+0
+indicators : CRITICAL : 2023-04-26 05:22:37,537 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 362, in run
+    self.mainloop()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 302, in mainloop
+    self.agg_cli.build_ta_aggregate(self.ta_db)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/indicators.py", line 200, in build_ta_aggregate
+    if alert['type'] == 's':
+TypeError: string indices must be integers
+alert_handler : CRITICAL : 2023-04-26 05:22:37,539 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 303, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 106, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 49, in poll_user_alerts
+    if alert['alerted']:
+TypeError: string indices must be integers
+telegram_handler : WARNING : 2023-04-26 05:22:39,342 : Jaejung_CryptoTrackerBot started at 2023-04-26 05:22:39.341963 UTC+0
+alert_handler : WARNING : 2023-04-26 05:24:36,288 : AlertHandler started at 2023-04-26 05:24:36.288897 UTC+0
+alert_handler : CRITICAL : 2023-04-26 05:24:36,290 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 303, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 106, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 49, in poll_user_alerts
+    if alert['alerted']:
+TypeError: string indices must be integers
+telegram_handler : WARNING : 2023-04-26 05:24:37,121 : Jaejung_CryptoTrackerBot started at 2023-04-26 05:24:37.121110 UTC+0
+alert_handler : WARNING : 2023-04-26 05:26:43,777 : AlertHandler started at 2023-04-26 05:26:43.777687 UTC+0
+alert_handler : CRITICAL : 2023-04-26 05:26:43,780 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 304, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 107, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 50, in poll_user_alerts
+    if alert['alerted']:
+TypeError: string indices must be integers
+telegram_handler : WARNING : 2023-04-26 05:26:44,628 : Jaejung_CryptoTrackerBot started at 2023-04-26 05:26:44.628617 UTC+0
+alert_handler : WARNING : 2023-04-26 12:24:20,061 : AlertHandler started at 2023-04-26 12:24:20.061308 UTC+0
+telegram_handler : WARNING : 2023-04-26 12:24:20,876 : Jaejung_CryptoTrackerBot started at 2023-04-26 12:24:20.876538 UTC+0
+alert_handler : WARNING : 2023-04-26 12:25:22,066 : AlertHandler started at 2023-04-26 12:25:22.066286 UTC+0
+telegram_handler : WARNING : 2023-04-26 12:25:22,890 : Jaejung_CryptoTrackerBot started at 2023-04-26 12:25:22.890363 UTC+0
+alert_handler : WARNING : 2023-04-26 12:51:39,079 : AlertHandler started at 2023-04-26 12:51:39.079724 UTC+0
+telegram_handler : WARNING : 2023-04-26 12:51:39,927 : Jaejung_CryptoTrackerBot started at 2023-04-26 12:51:39.927067 UTC+0
+alert_handler : CRITICAL : 2023-04-26 12:52:09,033 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 311, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 102, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 52, in poll_user_alerts
+    post = self.process_txs(pair, alert)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 292, in process_txs
+    \n  Block: {alert['Blcok']}\
+KeyError: 'Blcok'
+alert_handler : WARNING : 2023-04-26 12:52:21,818 : AlertHandler started at 2023-04-26 12:52:21.818796 UTC+0
+telegram_handler : WARNING : 2023-04-26 12:52:22,653 : Jaejung_CryptoTrackerBot started at 2023-04-26 12:52:22.653229 UTC+0
+alert_handler : WARNING : 2023-04-26 12:52:36,730 : AlertHandler started at 2023-04-26 12:52:36.730160 UTC+0
+telegram_handler : WARNING : 2023-04-26 12:52:37,576 : Jaejung_CryptoTrackerBot started at 2023-04-26 12:52:37.576747 UTC+0
+alert_handler : WARNING : 2023-04-26 12:54:54,399 : AlertHandler started at 2023-04-26 12:54:54.399951 UTC+0
+telegram_handler : WARNING : 2023-04-26 12:54:55,244 : Jaejung_CryptoTrackerBot started at 2023-04-26 12:54:55.244156 UTC+0
+alert_handler : WARNING : 2023-04-26 12:57:38,514 : AlertHandler started at 2023-04-26 12:57:38.514097 UTC+0
+telegram_handler : WARNING : 2023-04-26 12:57:39,352 : Jaejung_CryptoTrackerBot started at 2023-04-26 12:57:39.352594 UTC+0
+alert_handler : WARNING : 2023-04-27 00:16:43,153 : AlertHandler started at 2023-04-27 00:16:43.153814 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:16:44,021 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:16:44.021301 UTC+0
+alert_handler : WARNING : 2023-04-27 00:25:45,455 : AlertHandler started at 2023-04-27 00:25:45.455920 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:25:46,266 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:25:46.266946 UTC+0
+alert_handler : WARNING : 2023-04-27 00:26:35,617 : AlertHandler started at 2023-04-27 00:26:35.617492 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:26:36,453 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:26:36.453824 UTC+0
+alert_handler : WARNING : 2023-04-27 00:27:00,168 : AlertHandler started at 2023-04-27 00:27:00.168724 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:27:00,988 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:27:00.988603 UTC+0
+alert_handler : WARNING : 2023-04-27 00:28:31,622 : AlertHandler started at 2023-04-27 00:28:31.622185 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:28:32,480 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:28:32.480693 UTC+0
+alert_handler : WARNING : 2023-04-27 00:30:49,981 : AlertHandler started at 2023-04-27 00:30:49.981151 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:30:50,802 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:30:50.802633 UTC+0
+alert_handler : WARNING : 2023-04-27 00:31:04,788 : AlertHandler started at 2023-04-27 00:31:04.788625 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:31:05,611 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:31:05.611534 UTC+0
+alert_handler : CRITICAL : 2023-04-27 00:31:21,965 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 275, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 78, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 74, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 3 column 4 (char 17)
+alert_handler : WARNING : 2023-04-27 00:33:04,165 : AlertHandler started at 2023-04-27 00:33:04.165476 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:33:05,022 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:33:05.022010 UTC+0
+alert_handler : WARNING : 2023-04-27 00:38:28,281 : AlertHandler started at 2023-04-27 00:38:28.281289 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:38:29,123 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:38:29.123177 UTC+0
+alert_handler : WARNING : 2023-04-27 00:41:57,999 : AlertHandler started at 2023-04-27 00:41:57.999303 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:41:58,815 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:41:58.815597 UTC+0
+alert_handler : WARNING : 2023-04-27 00:42:45,290 : AlertHandler started at 2023-04-27 00:42:45.290329 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:42:46,141 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:42:46.141634 UTC+0
+alert_handler : WARNING : 2023-04-27 00:45:07,532 : AlertHandler started at 2023-04-27 00:45:07.532256 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:45:08,365 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:45:08.365009 UTC+0
+alert_handler : WARNING : 2023-04-27 00:46:40,474 : AlertHandler started at 2023-04-27 00:46:40.474578 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:46:41,328 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:46:41.328904 UTC+0
+alert_handler : WARNING : 2023-04-27 00:46:53,163 : AlertHandler started at 2023-04-27 00:46:53.163247 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:46:53,969 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:46:53.969358 UTC+0
+alert_handler : WARNING : 2023-04-27 00:48:12,645 : AlertHandler started at 2023-04-27 00:48:12.645195 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:48:13,497 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:48:13.497096 UTC+0
+alert_handler : WARNING : 2023-04-27 00:49:53,272 : AlertHandler started at 2023-04-27 00:49:53.272611 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:49:54,115 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:49:54.115301 UTC+0
+alert_handler : WARNING : 2023-04-27 00:50:37,264 : AlertHandler started at 2023-04-27 00:50:37.263991 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:50:38,080 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:50:38.080081 UTC+0
+alert_handler : WARNING : 2023-04-27 00:53:18,767 : AlertHandler started at 2023-04-27 00:53:18.767654 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:53:19,606 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:53:19.606747 UTC+0
+alert_handler : WARNING : 2023-04-27 00:57:35,240 : AlertHandler started at 2023-04-27 00:57:35.239959 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:57:36,083 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:57:36.083203 UTC+0
+alert_handler : WARNING : 2023-04-27 00:58:07,004 : AlertHandler started at 2023-04-27 00:58:07.004625 UTC+0
+telegram_handler : WARNING : 2023-04-27 00:58:07,828 : Jaejung_CryptoTrackerBot started at 2023-04-27 00:58:07.828882 UTC+0
+alert_handler : WARNING : 2023-04-27 01:05:31,153 : AlertHandler started at 2023-04-27 01:05:31.153108 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:05:32,005 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:05:32.005154 UTC+0
+alert_handler : WARNING : 2023-04-27 01:06:44,879 : AlertHandler started at 2023-04-27 01:06:44.879137 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:06:45,697 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:06:45.697092 UTC+0
+alert_handler : WARNING : 2023-04-27 01:07:14,188 : AlertHandler started at 2023-04-27 01:07:14.188579 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:07:15,047 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:07:15.047482 UTC+0
+alert_handler : WARNING : 2023-04-27 01:07:57,899 : AlertHandler started at 2023-04-27 01:07:57.899515 UTC+0
+alert_handler : CRITICAL : 2023-04-27 01:07:58,434 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 275, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 78, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 74, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+telegram_handler : WARNING : 2023-04-27 01:07:58,708 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:07:58.708876 UTC+0
+alert_handler : WARNING : 2023-04-27 01:08:01,453 : AlertHandler started at 2023-04-27 01:08:01.453027 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:08:02,285 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:08:02.285104 UTC+0
+alert_handler : WARNING : 2023-04-27 01:08:25,077 : AlertHandler started at 2023-04-27 01:08:25.077307 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:08:25,916 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:08:25.916207 UTC+0
+alert_handler : WARNING : 2023-04-27 01:08:58,915 : AlertHandler started at 2023-04-27 01:08:58.915494 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:08:59,754 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:08:59.754831 UTC+0
+alert_handler : WARNING : 2023-04-27 01:09:35,339 : AlertHandler started at 2023-04-27 01:09:35.339264 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:09:36,210 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:09:36.210753 UTC+0
+alert_handler : WARNING : 2023-04-27 01:10:35,623 : AlertHandler started at 2023-04-27 01:10:35.623552 UTC+0
+telegram_handler : WARNING : 2023-04-27 01:10:36,485 : Jaejung_CryptoTrackerBot started at 2023-04-27 01:10:36.485000 UTC+0
+telegram_handler : WARNING : 2023-04-27 05:47:59,371 : Jaejung_CryptoTrackerBot started at 2023-04-27 05:47:59.371041 UTC+0
+telegram_handler : WARNING : 2023-04-27 05:50:09,581 : Jaejung_CryptoTrackerBot started at 2023-04-27 05:50:09.581077 UTC+0
+telegram_handler : WARNING : 2023-04-27 05:57:32,192 : Jaejung_CryptoTrackerBot started at 2023-04-27 05:57:32.192643 UTC+0
+telegram_handler : WARNING : 2023-04-27 05:58:59,596 : Jaejung_CryptoTrackerBot started at 2023-04-27 05:58:59.596791 UTC+0
+telegram_handler : WARNING : 2023-04-27 05:59:33,213 : Jaejung_CryptoTrackerBot started at 2023-04-27 05:59:33.213474 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:04:02,553 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:04:02.553470 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:05:46,465 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:05:46.465697 UTC+0
+telegram_handler : CRITICAL : 2023-04-27 06:05:59,724 : Unexpected error has occurred while polling - Retrying in 30 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/telegram_handler.py", line 676, in run
+    self.polling()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/util.py", line 90, in run
+    task(*args, **kwargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 6720, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/telegram_handler.py", line 547, in wrapper
+    return func(*args, **kw)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/telegram_handler.py", line 38, in on_startalert
+    print(msg[1].upper())
+IndexError: list index out of range
+telegram_handler : WARNING : 2023-04-27 06:06:11,418 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:06:11.418042 UTC+0
+alert_handler : WARNING : 2023-04-27 06:47:12,948 : AlertHandler started at 2023-04-27 06:47:12.948719 UTC+0
+crawler : CRITICAL : 2023-04-27 06:47:12,951 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 136, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 123, in main_process
+    self.coin_users_map[coin].append(user)
+KeyError: 'BTC'
+telegram_handler : WARNING : 2023-04-27 06:47:13,809 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:47:13.809497 UTC+0
+alert_handler : WARNING : 2023-04-27 06:48:30,435 : AlertHandler started at 2023-04-27 06:48:30.435125 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:48:31,264 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:48:31.264817 UTC+0
+crawler : CRITICAL : 2023-04-27 06:48:48,770 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 136, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 127, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 109, in crawl_store_ether
+    self.store_data_to_user(users=users, coin_data=data, coin=coin)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 76, in store_data_to_user
+    configuration.Lock_update_coin_alerts(coin_data=coin_data, coin=coin)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 86, in Lock_update_coin_alerts
+    data[coin] = data[coin] + coin_data
+KeyError: 'ETH'
+alert_handler : WARNING : 2023-04-27 06:50:33,835 : AlertHandler started at 2023-04-27 06:50:33.835257 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:50:34,676 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:50:34.676336 UTC+0
+alert_handler : WARNING : 2023-04-27 06:51:00,246 : AlertHandler started at 2023-04-27 06:51:00.246733 UTC+0
+alert_handler : WARNING : 2023-04-27 06:51:12,756 : AlertHandler started at 2023-04-27 06:51:12.756662 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:51:13,584 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:51:13.584658 UTC+0
+alert_handler : WARNING : 2023-04-27 06:56:43,510 : AlertHandler started at 2023-04-27 06:56:43.509998 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:56:44,370 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:56:44.370123 UTC+0
+crawler : CRITICAL : 2023-04-27 06:56:55,913 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 137, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 128, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 109, in crawl_store_ether
+    self.store_data_to_user(users=users, coin_data=data, coin=coin)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 76, in store_data_to_user
+    configuration.Lock_update_coin_alerts(coin_data=coin_data, coin=coin)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 91, in Lock_update_coin_alerts
+    data[coin] = data[coin] + coin_data
+KeyError: 'ETH'
+alert_handler : WARNING : 2023-04-27 06:59:07,385 : AlertHandler started at 2023-04-27 06:59:07.385516 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:59:08,251 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:59:08.251063 UTC+0
+alert_handler : WARNING : 2023-04-27 06:59:56,019 : AlertHandler started at 2023-04-27 06:59:56.018997 UTC+0
+telegram_handler : WARNING : 2023-04-27 06:59:56,837 : Jaejung_CryptoTrackerBot started at 2023-04-27 06:59:56.837187 UTC+0
+alert_handler : WARNING : 2023-04-27 07:01:59,852 : AlertHandler started at 2023-04-27 07:01:59.852026 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:02:00,656 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:02:00.656454 UTC+0
+alert_handler : WARNING : 2023-04-27 07:02:25,886 : AlertHandler started at 2023-04-27 07:02:25.886707 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:02:26,724 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:02:26.724336 UTC+0
+alert_handler : WARNING : 2023-04-27 07:03:25,450 : AlertHandler started at 2023-04-27 07:03:25.449985 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:03:26,251 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:03:26.251639 UTC+0
+alert_handler : WARNING : 2023-04-27 07:04:01,210 : AlertHandler started at 2023-04-27 07:04:01.209982 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:04:02,007 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:04:02.007542 UTC+0
+telegram_handler : CRITICAL : 2023-04-27 07:04:06,232 : Unexpected error has occurred while polling - Retrying in 30 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/telegram_handler.py", line 689, in run
+    self.polling()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 1043, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 1118, in __threaded_polling
+    raise e
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 1074, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/util.py", line 90, in run
+    task(*args, **kwargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/telebot/__init__.py", line 6720, in _run_middlewares_and_handler
+    result = handler['function'](message)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/telegram_handler.py", line 43, in on_startalert
+    UserConfiguration(message.from_user.id).whitelist_user([coin_name], is_admin=True)
+UnboundLocalError: local variable 'coin_name' referenced before assignment
+alert_handler : WARNING : 2023-04-27 07:05:17,635 : AlertHandler started at 2023-04-27 07:05:17.635465 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:05:18,444 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:05:18.444856 UTC+0
+crawler : CRITICAL : 2023-04-27 07:05:26,117 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 136, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 119, in main_process
+    cfg.reset_all_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 98, in reset_all_alerts
+    with open(self.alerts_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json'
+alert_handler : WARNING : 2023-04-27 07:07:34,350 : AlertHandler started at 2023-04-27 07:07:34.350604 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:07:35,150 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:07:35.150568 UTC+0
+alert_handler : WARNING : 2023-04-27 07:07:42,443 : AlertHandler started at 2023-04-27 07:07:42.443445 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:07:43,306 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:07:43.306514 UTC+0
+crawler : CRITICAL : 2023-04-27 07:07:57,108 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 136, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 127, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 109, in crawl_store_ether
+    self.store_data_to_user(users=users, coin_data=data, coin=coin)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 76, in store_data_to_user
+    configuration.Lock_update_coin_alerts(coin_data=coin_data, coin=coin)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 91, in Lock_update_coin_alerts
+    with open(self.alerts_path, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json'
+alert_handler : WARNING : 2023-04-27 07:15:44,875 : AlertHandler started at 2023-04-27 07:15:44.875748 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:15:45,682 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:15:45.682659 UTC+0
+crawler : CRITICAL : 2023-04-27 07:15:52,004 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 139, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 122, in main_process
+    cfg.reset_all_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 99, in reset_all_alerts
+    with open(self.alerts_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json'
+alert_handler : WARNING : 2023-04-27 07:18:50,846 : AlertHandler started at 2023-04-27 07:18:50.846758 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:18:51,639 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:18:51.639640 UTC+0
+crawler : CRITICAL : 2023-04-27 07:18:57,220 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 139, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 122, in main_process
+    cfg.reset_all_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 98, in reset_all_alerts
+    with open(self.alerts_path, 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json'
+alert_handler : WARNING : 2023-04-27 07:20:58,888 : AlertHandler started at 2023-04-27 07:20:58.888393 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:20:59,708 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:20:59.708907 UTC+0
+alert_handler : WARNING : 2023-04-27 07:21:09,782 : AlertHandler started at 2023-04-27 07:21:09.782398 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:21:10,567 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:21:10.567145 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:21:21,294 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 275, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 78, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+alert_handler : WARNING : 2023-04-27 07:21:31,305 : AlertHandler started at 2023-04-27 07:21:31.305385 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:21:32,105 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:21:32.105765 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:21:38,649 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 275, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 78, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)
+alert_handler : WARNING : 2023-04-27 07:24:39,260 : AlertHandler started at 2023-04-27 07:24:39.260755 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:24:40,055 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:24:40.055388 UTC+0
+alert_handler : WARNING : 2023-04-27 07:25:09,489 : AlertHandler started at 2023-04-27 07:25:09.489772 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:25:10,311 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:25:10.311944 UTC+0
+alert_handler : WARNING : 2023-04-27 07:26:06,077 : AlertHandler started at 2023-04-27 07:26:06.077386 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:26:06,870 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:26:06.870173 UTC+0
+alert_handler : WARNING : 2023-04-27 07:26:55,071 : AlertHandler started at 2023-04-27 07:26:55.071007 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:26:55,893 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:26:55.893952 UTC+0
+crawler : CRITICAL : 2023-04-27 07:27:25,669 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 143, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 134, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 97, in crawl_store_ether
+    print('>>>>>>>>>>>>>>> first txs hash: ',data[0]['hash']) #<-----------------------------------------------
+IndexError: list index out of range
+alert_handler : WARNING : 2023-04-27 07:29:36,541 : AlertHandler started at 2023-04-27 07:29:36.541866 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:29:37,348 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:29:37.348106 UTC+0
+alert_handler : WARNING : 2023-04-27 07:34:18,865 : AlertHandler started at 2023-04-27 07:34:18.865197 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:34:19,662 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:34:19.662390 UTC+0
+alert_handler : WARNING : 2023-04-27 07:34:30,709 : AlertHandler started at 2023-04-27 07:34:30.709642 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:34:31,504 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:34:31.504964 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:34:44,202 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 277, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 80, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+alert_handler : WARNING : 2023-04-27 07:35:31,652 : AlertHandler started at 2023-04-27 07:35:31.652105 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:35:32,499 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:35:32.499498 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:35:44,310 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 277, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 80, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Unterminated string starting at: line 104 column 15 (char 4047)
+alert_handler : WARNING : 2023-04-27 07:38:09,770 : AlertHandler started at 2023-04-27 07:38:09.770239 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:38:10,601 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:38:10.601819 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:38:21,565 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 277, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 80, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+alert_handler : WARNING : 2023-04-27 07:39:43,799 : AlertHandler started at 2023-04-27 07:39:43.799583 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:39:44,615 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:39:44.615059 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:40:18,844 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 280, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 83, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 39, in poll_user_alerts
+    config = configuration.load_config()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 111, in load_config
+    with open(self.config_path, 'r') as infile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/config.json'
+alert_handler : WARNING : 2023-04-27 07:41:32,802 : AlertHandler started at 2023-04-27 07:41:32.802575 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:41:33,653 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:41:33.653262 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:42:18,438 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 44, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 3 column 4 (char 17)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 283, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 86, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 46, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 3 column 4 (char 17)
+alert_handler : WARNING : 2023-04-27 07:44:18,168 : AlertHandler started at 2023-04-27 07:44:18.168247 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:44:18,966 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:44:18.966496 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:44:48,679 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 44, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 283, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 86, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 46, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 5 (char 4)
+alert_handler : WARNING : 2023-04-27 07:46:24,165 : AlertHandler started at 2023-04-27 07:46:24.165878 UTC+0
+telegram_handler : WARNING : 2023-04-27 07:46:25,018 : Jaejung_CryptoTrackerBot started at 2023-04-27 07:46:25.018412 UTC+0
+alert_handler : CRITICAL : 2023-04-27 07:47:19,233 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 44, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 3 column 4 (char 17)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 283, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 86, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 46, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 81, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 3 column 4 (char 17)
+alert_handler : WARNING : 2023-04-27 11:19:42,919 : AlertHandler started at 2023-04-27 11:19:42.919249 UTC+0
+alert_handler : CRITICAL : 2023-04-27 11:19:42,919 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 284, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 87, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 49, in poll_user_alerts
+    for pair in alerts_database.keys():
+NameError: name 'alerts_database' is not defined
+telegram_handler : WARNING : 2023-04-27 11:19:43,793 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:19:43.793090 UTC+0
+alert_handler : WARNING : 2023-04-27 11:22:07,043 : AlertHandler started at 2023-04-27 11:22:07.043574 UTC+0
+telegram_handler : WARNING : 2023-04-27 11:22:07,861 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:22:07.861573 UTC+0
+alert_handler : WARNING : 2023-04-27 11:22:26,518 : AlertHandler started at 2023-04-27 11:22:26.518597 UTC+0
+crawler : CRITICAL : 2023-04-27 11:22:26,519 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 147, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 127, in main_process
+    cfg.reset_all_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 120, in reset_all_alerts
+    for k in data.keyes():
+AttributeError: 'dict' object has no attribute 'keyes'
+telegram_handler : WARNING : 2023-04-27 11:22:27,377 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:22:27.377551 UTC+0
+alert_handler : WARNING : 2023-04-27 11:23:22,243 : AlertHandler started at 2023-04-27 11:23:22.243770 UTC+0
+telegram_handler : WARNING : 2023-04-27 11:23:23,060 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:23:23.060850 UTC+0
+alert_handler : WARNING : 2023-04-27 11:35:29,744 : AlertHandler started at 2023-04-27 11:35:29.744940 UTC+0
+telegram_handler : WARNING : 2023-04-27 11:35:30,577 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:35:30.577105 UTC+0
+alert_handler : WARNING : 2023-04-27 11:42:50,110 : AlertHandler started at 2023-04-27 11:42:50.110875 UTC+0
+telegram_handler : WARNING : 2023-04-27 11:42:50,900 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:42:50.900035 UTC+0
+alert_handler : WARNING : 2023-04-27 11:44:14,102 : AlertHandler started at 2023-04-27 11:44:14.102551 UTC+0
+telegram_handler : WARNING : 2023-04-27 11:44:14,946 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:44:14.946741 UTC+0
+alert_handler : WARNING : 2023-04-27 11:45:42,980 : AlertHandler started at 2023-04-27 11:45:42.980021 UTC+0
+telegram_handler : WARNING : 2023-04-27 11:45:43,792 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:45:43.792852 UTC+0
+alert_handler : CRITICAL : 2023-04-27 11:45:59,940 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 287, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 90, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 82, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+alert_handler : WARNING : 2023-04-27 11:46:49,428 : AlertHandler started at 2023-04-27 11:46:49.428900 UTC+0
+telegram_handler : WARNING : 2023-04-27 11:46:50,236 : Jaejung_CryptoTrackerBot started at 2023-04-27 11:46:50.235976 UTC+0
+alert_handler : CRITICAL : 2023-04-27 11:50:05,828 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 287, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 90, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 40, in poll_user_alerts
+    alerts_database = configuration.Lock_load_and_remove_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 82, in Lock_load_and_remove_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+alert_handler : WARNING : 2023-04-27 12:00:28,886 : AlertHandler started at 2023-04-27 12:00:28.886036 UTC+0
+telegram_handler : WARNING : 2023-04-27 12:00:29,687 : Jaejung_CryptoTrackerBot started at 2023-04-27 12:00:29.687312 UTC+0
+alert_handler : WARNING : 2023-04-27 12:23:34,866 : AlertHandler started at 2023-04-27 12:23:34.866145 UTC+0
+telegram_handler : WARNING : 2023-04-27 12:23:35,690 : Jaejung_CryptoTrackerBot started at 2023-04-27 12:23:35.690019 UTC+0
+alert_handler : WARNING : 2023-04-28 00:27:19,503 : AlertHandler started at 2023-04-28 00:27:19.503935 UTC+0
+telegram_handler : WARNING : 2023-04-28 00:27:20,316 : Jaejung_CryptoTrackerBot started at 2023-04-28 00:27:20.316946 UTC+0
+crawler : WARNING : 2023-04-28 00:28:23,492 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:28:23,492 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:28:23,492 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:28:43,624 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:28:43,625 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:28:43,625 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:29:17,876 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:29:17,876 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 00:38:33,785 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-04-28 01:08:31,488 : AlertHandler started at 2023-04-28 01:08:31.488894 UTC+0
+telegram_handler : WARNING : 2023-04-28 01:08:32,285 : Jaejung_CryptoTrackerBot started at 2023-04-28 01:08:32.285351 UTC+0
+crawler : WARNING : 2023-04-28 01:08:53,103 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 01:09:21,934 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:09:25,151 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:09:25,154 : %% None type table occurs %%
+alert_handler : WARNING : 2023-04-28 01:10:55,447 : AlertHandler started at 2023-04-28 01:10:55.447938 UTC+0
+telegram_handler : WARNING : 2023-04-28 01:10:56,266 : Jaejung_CryptoTrackerBot started at 2023-04-28 01:10:56.265974 UTC+0
+crawler : WARNING : 2023-04-28 01:11:09,488 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 01:11:09,488 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 01:12:09,854 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:14:09,490 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:14:09,491 : %% None type table occurs %%
+alert_handler : WARNING : 2023-04-28 01:16:53,445 : AlertHandler started at 2023-04-28 01:16:53.445507 UTC+0
+telegram_handler : WARNING : 2023-04-28 01:16:54,269 : Jaejung_CryptoTrackerBot started at 2023-04-28 01:16:54.269739 UTC+0
+crawler : WARNING : 2023-04-28 01:17:07,141 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 01:17:07,142 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-04-28 01:17:35,167 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:17:35,170 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:17:35,173 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:17:37,384 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:17:37,387 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:17:37,390 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:18:37,450 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:18:37,453 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:18:37,456 : %% None type table occurs %%
+crawler : WARNING : 2023-04-28 01:18:39,156 : %% None type table occurs %%
+alert_handler : WARNING : 2023-04-28 01:19:28,833 : AlertHandler started at 2023-04-28 01:19:28.832971 UTC+0
+telegram_handler : WARNING : 2023-04-28 01:19:29,641 : Jaejung_CryptoTrackerBot started at 2023-04-28 01:19:29.640976 UTC+0
+alert_handler : WARNING : 2023-04-28 01:19:56,670 : AlertHandler started at 2023-04-28 01:19:56.670037 UTC+0
+telegram_handler : WARNING : 2023-04-28 01:19:57,522 : Jaejung_CryptoTrackerBot started at 2023-04-28 01:19:57.522384 UTC+0
+alert_handler : WARNING : 2023-04-28 01:20:08,613 : AlertHandler started at 2023-04-28 01:20:08.613672 UTC+0
+telegram_handler : WARNING : 2023-04-28 01:20:09,416 : Jaejung_CryptoTrackerBot started at 2023-04-28 01:20:09.416662 UTC+0
+crawler : WARNING : 2023-04-28 01:20:17,978 : %% FileNotFoundError occur %%
+telegram_handler : ERROR : 2023-04-30 01:19:21,570 : Bot has crashed due to read timeout - Restarting in 5 seconds...
+telegram_handler : ERROR : 2023-04-30 01:19:52,164 : Bot has crashed due to read timeout - Restarting in 5 seconds...
+alert_handler : WARNING : 2023-05-01 11:34:47,572 : AlertHandler started at 2023-05-01 11:34:47.572684 UTC+0
+telegram_handler : WARNING : 2023-05-01 11:34:48,385 : Jaejung_CryptoTrackerBot started at 2023-05-01 11:34:48.385288 UTC+0
+alert_handler : WARNING : 2023-05-31 06:59:03,685 : AlertHandler started at 2023-05-31 06:59:03.685366 UTC+0
+telegram_handler : WARNING : 2023-05-31 06:59:04,466 : Jaejung_CryptoTrackerBot started at 2023-05-31 06:59:04.466617 UTC+0
+alert_handler : WARNING : 2023-06-01 06:05:23,703 : AlertHandler started at 2023-06-01 06:05:23.703345 UTC+0
+telegram_handler : WARNING : 2023-06-01 06:05:24,456 : Jaejung_CryptoTrackerBot started at 2023-06-01 06:05:24.456690 UTC+0
+alert_handler : WARNING : 2023-06-01 06:11:54,601 : AlertHandler started at 2023-06-01 06:11:54.601086 UTC+0
+telegram_handler : WARNING : 2023-06-01 06:11:55,366 : Jaejung_CryptoTrackerBot started at 2023-06-01 06:11:55.366825 UTC+0
+alert_handler : WARNING : 2023-06-01 06:14:01,781 : AlertHandler started at 2023-06-01 06:14:01.780989 UTC+0
+telegram_handler : WARNING : 2023-06-01 06:14:02,553 : Jaejung_CryptoTrackerBot started at 2023-06-01 06:14:02.553045 UTC+0
+alert_handler : WARNING : 2023-06-01 06:14:37,058 : AlertHandler started at 2023-06-01 06:14:37.058675 UTC+0
+telegram_handler : WARNING : 2023-06-01 06:14:37,849 : Jaejung_CryptoTrackerBot started at 2023-06-01 06:14:37.849935 UTC+0
+alert_handler : WARNING : 2023-06-01 06:15:29,452 : AlertHandler started at 2023-06-01 06:15:29.452825 UTC+0
+telegram_handler : WARNING : 2023-06-01 06:15:30,207 : Jaejung_CryptoTrackerBot started at 2023-06-01 06:15:30.206976 UTC+0
+alert_handler : WARNING : 2023-06-01 06:16:28,794 : AlertHandler started at 2023-06-01 06:16:28.794687 UTC+0
+telegram_handler : WARNING : 2023-06-01 06:16:29,568 : Jaejung_CryptoTrackerBot started at 2023-06-01 06:16:29.568126 UTC+0
+alert_handler : WARNING : 2023-06-10 00:33:40,161 : AlertHandler started at 2023-06-10 00:33:40.161593 UTC+0
+telegram_handler : WARNING : 2023-06-10 00:33:41,854 : Jaejung_CryptoTrackerBot started at 2023-06-10 00:33:41.854116 UTC+0
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,976 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,977 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,978 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,979 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,980 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,981 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,982 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,983 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,984 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,984 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,984 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,984 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,984 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,984 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:37:07,984 : %% FileNotFoundError occur %%
+alert_handler : CRITICAL : 2023-06-10 00:37:22,223 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 287, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 90, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 55, in poll_user_alerts
+    post = self.process_txs(pair, alert)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/alert_handler.py", line 73, in process_txs
+    \n - <b>Value</b>:    {alert['Value']}\
+KeyError: 'Value'
+alert_handler : WARNING : 2023-06-10 00:40:54,261 : AlertHandler started at 2023-06-10 00:40:54.261171 UTC+0
+telegram_handler : WARNING : 2023-06-10 00:40:55,098 : Jaejung_CryptoTrackerBot started at 2023-06-10 00:40:55.098677 UTC+0
+crawler : WARNING : 2023-06-10 00:41:07,405 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:41:07,405 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:41:07,405 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-10 00:43:30,681 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-11 06:22:55,364 : AlertHandler started at 2023-06-11 06:22:55.364381 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:22:56,927 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:22:56.927374 UTC+0
+crawler : WARNING : 2023-06-11 06:23:38,606 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-11 06:23:38,607 : %% FileNotFoundError occur %%
+crawler : CRITICAL : 2023-06-11 06:23:49,881 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 176, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 167, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 139, in crawl_store_ether
+    data, _ = self.extract_txs(response_list=response_list, only_first=False, prev_first_hash=prev_first_hash)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 62, in extract_txs
+    and self.check_this_txs(txs_values["URL for detail"]) == True:
+TypeError: Crawler.check_this_txs() takes 1 positional argument but 2 were given
+alert_handler : WARNING : 2023-06-11 06:25:30,031 : AlertHandler started at 2023-06-11 06:25:30.031095 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:25:30,816 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:25:30.816824 UTC+0
+crawler : WARNING : 2023-06-11 06:25:38,055 : %% FileNotFoundError occur %%
+crawler : CRITICAL : 2023-06-11 06:25:45,326 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 177, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 168, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 140, in crawl_store_ether
+    data, _ = self.extract_txs(response_list=response_list, only_first=False, prev_first_hash=prev_first_hash)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 63, in extract_txs
+    if self.check_this_txs(txs_values["URL for detail"]) == True:
+TypeError: Crawler.check_this_txs() takes 1 positional argument but 2 were given
+alert_handler : WARNING : 2023-06-11 06:26:08,081 : AlertHandler started at 2023-06-11 06:26:08.081413 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:26:08,871 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:26:08.871472 UTC+0
+crawler : WARNING : 2023-06-11 06:26:12,328 : %% FileNotFoundError occur %%
+crawler : CRITICAL : 2023-06-11 06:26:20,384 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 177, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 168, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 140, in crawl_store_ether
+    data, _ = self.extract_txs(response_list=response_list, only_first=False, prev_first_hash=prev_first_hash)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 63, in extract_txs
+    if self.check_this_txs(txs_values["URL for detail"]) == True:
+TypeError: Crawler.check_this_txs() takes 1 positional argument but 2 were given
+alert_handler : WARNING : 2023-06-11 06:29:35,241 : AlertHandler started at 2023-06-11 06:29:35.241443 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:29:35,996 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:29:35.996609 UTC+0
+crawler : WARNING : 2023-06-11 06:29:40,676 : %% FileNotFoundError occur %%
+crawler : CRITICAL : 2023-06-11 06:30:04,183 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 179, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 170, in main_process
+    self.crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 142, in crawl_store_ether
+    data, _ = self.extract_txs(response_list=response_list, only_first=False, prev_first_hash=prev_first_hash)
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 65, in extract_txs
+    if self.check_this_txs(txs_values["URL for detail"]) == True:
+TypeError: Crawler.check_this_txs() takes 1 positional argument but 2 were given
+alert_handler : WARNING : 2023-06-11 06:31:08,563 : AlertHandler started at 2023-06-11 06:31:08.562970 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:31:09,333 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:31:09.333369 UTC+0
+crawler : WARNING : 2023-06-11 06:31:13,170 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-11 06:31:13,171 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-11 06:37:27,572 : AlertHandler started at 2023-06-11 06:37:27.572451 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:37:28,365 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:37:28.365622 UTC+0
+crawler : WARNING : 2023-06-11 06:37:32,739 : %% FileNotFoundError occur %%
+crawler : CRITICAL : 2023-06-11 06:37:32,739 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 176, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 156, in main_process
+    cfg.reset_all_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 104, in reset_all_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+alert_handler : WARNING : 2023-06-11 06:37:45,794 : AlertHandler started at 2023-06-11 06:37:45.794925 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:37:46,566 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:37:46.566706 UTC+0
+crawler : WARNING : 2023-06-11 06:37:53,014 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-11 06:38:52,276 : AlertHandler started at 2023-06-11 06:38:52.276887 UTC+0
+telegram_handler : WARNING : 2023-06-11 06:38:53,073 : Jaejung_CryptoTrackerBot started at 2023-06-11 06:38:53.072980 UTC+0
+crawler : WARNING : 2023-06-11 06:39:12,587 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-11 06:39:12,587 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-12 04:40:38,419 : AlertHandler started at 2023-06-12 04:40:38.419890 UTC+0
+telegram_handler : WARNING : 2023-06-12 04:40:39,189 : Jaejung_CryptoTrackerBot started at 2023-06-12 04:40:39.189941 UTC+0
+crawler : WARNING : 2023-06-12 04:41:04,988 : %% FileNotFoundError occur %%
+crawler : CRITICAL : 2023-06-12 04:41:04,988 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 191, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 171, in main_process
+    cfg.reset_all_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 104, in reset_all_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+alert_handler : WARNING : 2023-06-12 04:41:11,693 : AlertHandler started at 2023-06-12 04:41:11.692985 UTC+0
+telegram_handler : WARNING : 2023-06-12 04:41:12,460 : Jaejung_CryptoTrackerBot started at 2023-06-12 04:41:12.460101 UTC+0
+crawler : WARNING : 2023-06-12 04:41:16,284 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-12 04:43:51,911 : AlertHandler started at 2023-06-12 04:43:51.911922 UTC+0
+telegram_handler : WARNING : 2023-06-12 04:43:52,727 : Jaejung_CryptoTrackerBot started at 2023-06-12 04:43:52.727410 UTC+0
+crawler : WARNING : 2023-06-12 04:43:56,776 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-12 04:44:08,757 : AlertHandler started at 2023-06-12 04:44:08.757415 UTC+0
+telegram_handler : WARNING : 2023-06-12 04:44:09,509 : Jaejung_CryptoTrackerBot started at 2023-06-12 04:44:09.509910 UTC+0
+crawler : WARNING : 2023-06-12 04:44:11,818 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-12 04:44:11,818 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-12 04:44:11,818 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-12 04:45:14,221 : AlertHandler started at 2023-06-12 04:45:14.221841 UTC+0
+telegram_handler : WARNING : 2023-06-12 04:45:15,004 : Jaejung_CryptoTrackerBot started at 2023-06-12 04:45:15.004084 UTC+0
+crawler : WARNING : 2023-06-12 04:45:28,382 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-12 04:47:51,131 : AlertHandler started at 2023-06-12 04:47:51.131859 UTC+0
+telegram_handler : WARNING : 2023-06-12 04:47:51,898 : Jaejung_CryptoTrackerBot started at 2023-06-12 04:47:51.898184 UTC+0
+crawler : WARNING : 2023-06-12 04:48:03,375 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-12 04:48:03,376 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-12 04:49:12,986 : AlertHandler started at 2023-06-12 04:49:12.986714 UTC+0
+telegram_handler : WARNING : 2023-06-12 04:49:13,769 : Jaejung_CryptoTrackerBot started at 2023-06-12 04:49:13.768995 UTC+0
+crawler : WARNING : 2023-06-12 04:49:19,089 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-13 00:51:11,342 : AlertHandler started at 2023-06-13 00:51:11.342697 UTC+0
+telegram_handler : WARNING : 2023-06-13 00:51:12,097 : Jaejung_CryptoTrackerBot started at 2023-06-13 00:51:12.097645 UTC+0
+crawler : WARNING : 2023-06-13 00:51:51,471 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-13 00:51:51,471 : %% FileNotFoundError occur %%
+crawler : WARNING : 2023-06-13 00:51:51,472 : %% FileNotFoundError occur %%
+alert_handler : WARNING : 2023-06-13 01:00:30,206 : AlertHandler started at 2023-06-13 01:00:30.206434 UTC+0
+telegram_handler : WARNING : 2023-06-13 01:00:30,977 : Jaejung_CryptoTrackerBot started at 2023-06-13 01:00:30.977190 UTC+0
+crawler : CRITICAL : 2023-06-13 01:00:46,307 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 201, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/crawler.py", line 181, in main_process
+    cfg.reset_all_alerts()
+  File "/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/io_client.py", line 104, in reset_all_alerts
+    data = json.load(f)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+alert_handler : WARNING : 2023-06-13 01:07:48,148 : AlertHandler started at 2023-06-13 01:07:48.148498 UTC+0
+telegram_handler : WARNING : 2023-06-13 01:07:48,896 : Jaejung_CryptoTrackerBot started at 2023-06-13 01:07:48.896484 UTC+0
+crawler : WARNING : 2023-06-13 01:08:00,799 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json' $$$
+crawler : WARNING : 2023-06-13 01:08:00,799 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json' $$$
+crawler : WARNING : 2023-06-13 01:08:00,800 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/Telegram-Crypto-Alerts/bot/whitelist/5693094929/alerts.json' $$$
+alert_handler : WARNING : 2023-06-14 01:50:42,137 : AlertHandler started at 2023-06-14 01:50:42.137886 UTC+0
+telegram_handler : WARNING : 2023-06-14 01:50:43,661 : Jaejung_CryptoTrackerBot started at 2023-06-14 01:50:43.660995 UTC+0
