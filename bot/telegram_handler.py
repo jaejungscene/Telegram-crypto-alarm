@@ -61,8 +61,7 @@ class TelegramBot(TeleBot):
             
             if len(coin_names) > 0:
                 UserConfiguration(message.from_user.id).whitelist_user(coin_names, is_admin=True)
-                logger.info(f"Successfully add \"{str(message.from_user.id)}\" in whitelist_user")
-                logger.info(f"Successfully started \"{str(coin_names)}\" alert!")
+                logger.info(f"Successfully, Add \"{str(message.from_user.id)}\" in whitelist_user and Start \"{str(coin_names)}\" alert")
                 self.reply_to(message, f"Successfully started \"{str(coin_names)}\" alert!")
         
 
@@ -707,7 +706,7 @@ class TelegramBot(TeleBot):
         return SimpleIndicator(pair, indicator)
 
     def run(self):
-        logger.warn(f'{self.get_me().username} started at {datetime.utcnow()} UTC+0')
+        logger.info(f'{self.get_me().username} started')
         while True:
             try:
                 self.polling()

@@ -19,11 +19,11 @@ if __name__ == "__main__":
 
     # Process environment variables
     handle_env()
-    print("OWNER_ID:  ", getenv('OWNER_ID'))
-    print("TELEGRAM_BOT_TOKEN: ",getenv('TELEGRAM_BOT_TOKEN'))
-    print("TAAPIIO_APIKEY: ",getenv('TAAPIIO_APIKEY'))
-    print("TAAPIIO_APIKEY2: ",getenv('TAAPIIO_APIKEY2'))
-    print("-------------------------------------------------------")
+    print("Owner's Telegram ID:  ", getenv('OWNER_ID'))
+    # print("TELEGRAM_BOT_TOKEN: ",getenv('TELEGRAM_BOT_TOKEN'))
+    # print("TAAPIIO_APIKEY: ",getenv('TAAPIIO_APIKEY'))
+    # print("TAAPIIO_APIKEY2: ",getenv('TAAPIIO_APIKEY2'))
+    print("-"*100)
 
     # Run the TG bot in a daemon thread
     threading.Thread(target=TelegramBot(bot_token=getenv('TELEGRAM_BOT_TOKEN'),
@@ -42,8 +42,7 @@ if __name__ == "__main__":
 
     # Run the AlertHandler() in a daemon thread
     threading.Thread(target=AlertHandler(telegram_bot_token=getenv('TELEGRAM_BOT_TOKEN'),
-                                         sendgrid_apikey=getenv(
-                                             'SENDGRID_APIKEY'),
+                                         sendgrid_apikey=getenv('SENDGRID_APIKEY'),
                                          alert_email=getenv('ALERTS_EMAIL')).run, 
                      daemon=True).start()
 

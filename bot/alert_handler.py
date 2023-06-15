@@ -53,7 +53,6 @@ class AlertHandler:
             # reverse: to send in old order
             for alert in reversed(alerts_database[pair]):
                 post = self.process_txs(pair, alert)
-                logger.info(post)
                 status = self.tg_alert(post=post, channel_ids=config['channels'])
                 if len(status[1]) > 0: # if some user id cann't not receive alert.
                     logger.warn(f"Failed to send Telegram alert ({post}) to the following IDs: {status[1]}")
@@ -83,9 +82,15 @@ class AlertHandler:
         2. Fetch all pair prices
         3. Log individual user failures
         """
-        for user in get_whitelist():
-            # print("user|\t\t", user)
-            self.poll_user_alerts(tg_user_id=user)
+        i = 0
+        whitelist = get_whitelist()
+        while i < len(whitelist):
+            try:
+                self.poll_user_alerts(tg_user_id=whitelist[i])
+            except Exception as e:
+                logger.warn(f"$$ {e} $$")
+                continue
+            i += 1
 
 
     def tg_alert(self, post: str, channel_ids: list[str]) -> tuple:
@@ -104,6 +109,7 @@ class AlertHandler:
                 requests.post(url=f'https://api.telegram.org/bot{self.tg_bot_token}/sendMessage',
                               params={'chat_id': group_id, 'text': header_str + post, "parse_mode": "HTML"})
                 output[0].append(group_id)
+                logger.info(f"Successfully Sent Alert to {group_id}")
             except:
                 output[1].append(group_id)
 
@@ -280,7 +286,7 @@ class AlertHandler:
 
     def run(self):
         try:
-            logger.warn(f'{type(self).__name__} started at {datetime.utcnow()} UTC+0')
+            logger.info(f'{type(self).__name__} started')
             while True:
                 self.poll_all_alerts()
         except NotImplementedError as exc:

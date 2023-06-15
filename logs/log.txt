@@ -1485,3 +1485,56 @@ Traceback (most recent call last):
   File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 74, in process_txs
     post_str = "<b>"+pair+":"+alert['hash']+"</b>" + string_format
 KeyError: 'hash'
+alert_handler : WARNING : 2023-06-15 02:00:14,108 : AlertHandler started at 2023-06-15 02:00:14.108688 UTC+0
+telegram_handler : WARNING : 2023-06-15 02:00:14,887 : Jaejung_CryptoTrackerBot started at 2023-06-15 02:00:14.887816 UTC+0
+crawler : WARNING : 2023-06-15 02:00:32,667 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+alert_handler : CRITICAL : 2023-06-15 02:00:32,667 : An error has occurred in the mainloop. Trying again in 15 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 285, in run
+    self.poll_all_alerts()
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 113, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/.local/lib/python3.10/site-packages/ratelimit/decorators.py", line 80, in wrapper
+    return func(*args, **kargs)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 88, in poll_all_alerts
+    self.poll_user_alerts(tg_user_id=user)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/alert_handler.py", line 39, in poll_user_alerts
+    config = configuration.load_config()
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/io_client.py", line 118, in load_config
+    with open(self.config_path, 'r') as infile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/config.json'
+crawler : WARNING : 2023-06-15 02:00:32,668 : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+crawler : CRITICAL : 2023-06-15 02:00:34,242 : An error has occurred in the mainloop - restarting in 5 seconds...
+Traceback (most recent call last):
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 238, in run
+    self.main_process()
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 230, in main_process
+    self.start_crawl_store_ether(users)
+  File "/home/jaejung/private/Telegram-crypto-alarm/bot/crawler.py", line 191, in start_crawl_store_ether
+    prev_first_hash = self.extract_txs(response_list=[response], only_first=True)
+TypeError: Crawler.extract_txs() missing 2 required positional arguments: 'users' and 'coin'
+alert_handler : WARNING : 2023-06-15 02:20:18,922 : AlertHandler started at 2023-06-15 02:20:18.922852 UTC+0
+telegram_handler : WARNING : 2023-06-15 02:20:19,692 : Jaejung_CryptoTrackerBot started at 2023-06-15 02:20:19.691998 UTC+0
+alert_handler : WARNING : 2023-06-15 02:32:58,344 : AlertHandler started at 2023-06-15 02:32:58.344589 UTC+0
+telegram_handler : WARNING : 2023-06-15 02:32:59,133 : Jaejung_CryptoTrackerBot started at 2023-06-15 02:32:59.133087 UTC+0
+alert_handler : WARNING : 2023-06-15 06:42:19 : AlertHandler started at 2023-06-15 02:42:19.221009 UTC+0
+telegram_handler : WARNING : 2023-06-15 06:42:19 : Jaejung_CryptoTrackerBot started at 2023-06-15 02:42:19.980371 UTC+0
+alert_handler : WARNING : 2023-06-15 11:42:49 : AlertHandler started at 2023-06-15 02:42:49.152220 UTC+0
+telegram_handler : WARNING : 2023-06-15 11:42:49 : Jaejung_CryptoTrackerBot started at 2023-06-15 02:42:49.926497 UTC+0
+alert_handler   : WARNING  : 2023-06-15 11:47:22 : AlertHandler started at 2023-06-15 02:47:22.779327 UTC+0
+telegram_handler : WARNING  : 2023-06-15 11:47:22 : Jaejung_CryptoTrackerBot started at 2023-06-15 02:47:23.540727 UTC+0
+alert_handler        : WARNING  : 2023-06-15 11:47:33 : AlertHandler started at 2023-06-15 02:47:34.088804 UTC+0
+telegram_handler     : WARNING  : 2023-06-15 11:47:33 : Jaejung_CryptoTrackerBot started at 2023-06-15 02:47:34.866459 UTC+0
+2023-06-15 11:48:17 : alert_handler        : WARNING  : AlertHandler started at 2023-06-15 02:48:17.240845 UTC+0
+2023-06-15 11:48:17 : telegram_handler     : WARNING  : Jaejung_CryptoTrackerBot started at 2023-06-15 02:48:18.013074 UTC+0
+alert_handler        : WARNING  : AlertHandler started at 2023-06-15 02:48:39.030136 UTC+0 : 2023-06-15 11:48:38
+telegram_handler     : WARNING  : Jaejung_CryptoTrackerBot started at 2023-06-15 02:48:39.812483 UTC+0 : 2023-06-15 11:48:38
+alert_handler      : WARNING  : AlertHandler started at 2023-06-15 02:48:56.092838 UTC+0 : 2023-06-15 11:48:55
+telegram_handler   : WARNING  : Jaejung_CryptoTrackerBot started at 2023-06-15 02:48:56.866303 UTC+0 : 2023-06-15 11:48:55
+alert_handler     : WARNING  : AlertHandler started at 2023-06-15 02:49:06.669101 UTC+0 : 2023-06-15 11:49:06
+telegram_handler  : WARNING  : Jaejung_CryptoTrackerBot started at 2023-06-15 02:49:07.452273 UTC+0 : 2023-06-15 11:49:06
+alert_handler     : WARNING  : AlertHandler started : 2023-06-15 11:50:44
+telegram_handler  : WARNING  : Jaejung_CryptoTrackerBot started : 2023-06-15 11:50:44
+crawler           : WARNING (2023-06-15 11:55:13) : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$
+crawler           : WARNING (2023-06-15 11:55:13) : $$$ Expecting value: line 1 column 1 (char 0) $$$
+crawler           : WARNING (2023-06-15 11:59:48) : $$$ [Errno 2] No such file or directory: '/home/jaejung/private/Telegram-crypto-alarm/bot/whitelist/5693094929/alerts.json' $$$

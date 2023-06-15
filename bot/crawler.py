@@ -53,9 +53,25 @@ class Crawler:
             self.coin_users_map[coin] = []
 
 
-    def extract_txs(self, response_list: list, only_first=False, prev_first_hash: str=None) -> tuple:
-        match = False
-        data = []
+    def get_requests(self, url: str, **param) -> requests.Response:
+        if len(param) != 0:
+            url = f"{url}?ps={param['num_txs']}&p={param['num_page']}"
+
+        if PROXY == False:
+            response = requests.get(url, headers=HEADERS)
+        else:
+            response = requests.get(
+                url=PROXY_URL,
+                params={
+                    'api_key': PROXY_API_KEY,
+                    'url': url, 
+                },
+            )
+        return response
+
+
+    def extract_txs(self, response_list: list, users: list, coin: str, only_first=False, prev_first_hash: str=None) -> tuple:
+        first_txs = None
         for response in response_list:
             soup = bs4.BeautifulSoup(response.content, "html.parser")
             table = soup.find('tbody', {'class':ETH_TXS_CLASS_TAG})
@@ -77,42 +93,23 @@ class Crawler:
                     # "Txn Fee": row_data[11].text.strip(),
                     "URL": ospt.join(ETH_URL[:-1], txs_hash)
                 }
-                if only_first:
-                    print("only_first")
-                    data.append(txs_values)
+                if first_txs is None:
+                    first_txs = txs_values
+                if only_first or txs_values['Hash'] == prev_first_hash:
+                    print("----- only_first or txs_values['Hash'] == prev_first_hash")
                     break
-                elif txs_values['Hash']==prev_first_hash:
-                    print("txs_values['Hash'] == prev_first_hash")
-                    match = True
-                    return (data, match)
                 else:
-                    if self.check_this_txs(txs_values) == True:
-                        data.append(txs_values)
-        return (data, match)
-         
-
-    def get_requests(self, url: str, **param) -> requests.Response:
-        if len(param) != 0:
-            url = f"{url}?ps={param['num_txs']}&p={param['num_page']}"
-
-        if PROXY == False:
-            response = requests.get(url, headers=HEADERS)
-        else:
-            response = requests.get(
-                url=PROXY_URL,
-                params={
-                    'api_key': PROXY_API_KEY,
-                    'url': url, 
-                },
-            )
-        return response
+                    if self.check_txs(txs_values):
+                        self.store_txs_to_database(users=users, coin_data=[txs_values], coin=coin)
+        return first_txs['Hash']
 
 
-    def check_this_txs(self, txs_values: dict) -> bool:
-        time.sleep(0.25)
+
+    def check_txs(self, txs_values: dict) -> bool:
+        # time.sleep(0.25)
         response = self.get_requests(txs_values["URL"])
         if response.status_code != 200:
-            print(f"fail requesting from {txs_values['URL']}")
+            print(f"----- fail requesting from {txs_values['URL']}")
             return False # fail
 
         ########## Test Logic ###########
@@ -128,12 +125,12 @@ class Crawler:
         methodResult = soup.find(string=re.compile("Function: "))
         methodResult = re.split('\n| |\(', methodResult.text)[1] if methodResult is not None else None
         if methodResult is None or methodResult in ETH_IGNORE_METHOD:
-            print('> Method false')
+            print('----- Method false')
             return False # fail
 
         ERC_check = soup.find(string=re.compile('ERC-20 Tokens'))
         if ERC_check == None:
-            print('> ERC false')
+            print('----- ERC false')
             return False # fail
         
         ERC_table = ERC_check.parent
@@ -146,7 +143,7 @@ class Crawler:
             ERC_table = ERC_table.parent
         price_list = ERC_table.find_all('span', class_="text-muted me-1")
         if len(price_list) == 0:
-            print("> price_list false")
+            print("----- price_list false")
             return False # fail
         
         max_values = -1
@@ -155,23 +152,17 @@ class Crawler:
             if v > THRESHOLD and v > max_values:
                 max_values = v
         if max_values == -1:
-            print('> price false')
+            print('----- price false')
             return False # fail
 
         txs_values["Method"] = string_inverse_transform(methodResult)
         txs_values['Exchanged Max Values'] = max_values
         print(">>>>>>>>>>>>>>>>>  Pass check txs")
         return True
-            
-            
-    def check_response(self, response: requests.Response, expected_status=200) -> None:
-        if response.status_code == expected_status:
-            print("Success!!")
-        else:
-            print('Request failed with status code:', response.status_code)        
 
 
-    def store_data_to_user(self, users: list, coin_data: list, coin: str) -> None:
+
+    def store_txs_to_database(self, users: list, coin_data: list, coin: str) -> None:
         for user in users:
             try:
                 configuration = UserConfiguration(user)
@@ -180,7 +171,8 @@ class Crawler:
                 print(f"Jump the {user}")
 
 
-    def crawl_store_ether(self, users: list) -> None:
+
+    def start_crawl_store_ether(self, users: list) -> None:
         """
         Crawl etherium transaction from Etherscan site and Store the processed data to user's "alerts.json" file
         """
@@ -195,8 +187,8 @@ class Crawler:
             # response = requests.get(ETH_URL+f"?ps={num_txs}&p={num_page}", headers=HEADERS)
             if response.status_code != 200: continue
             else:   break
-        data, _ = self.extract_txs(response_list=[response], only_first=True)
-        prev_first_hash = data[0]['Hash'] # set first transaction in first response html file
+        # set first transaction in first response html file
+        prev_first_hash = self.extract_txs(response_list=[response], users=users, coin=coin, only_first=True)
 
         num_txs = 100
         while True and len(get_whitelist()) > 0:
@@ -207,13 +199,14 @@ class Crawler:
                 # response = requests.get(ETH_URL+f"?ps={num_txs}&p={len(response_list)+1}", headers=HEADERS)
                 if response.status_code == 200:
                     response_list.append(response)
-            data, _ = self.extract_txs(response_list=response_list, only_first=False, prev_first_hash=prev_first_hash)
-            if len(data) > 0:
-                self.store_data_to_user(users=users, coin_data=data, coin=coin)
-                prev_first_hash = data[0]['Hash']
-                print(">>>>>>>>>> change!!!") #<-----------------------------------------------
-            else:
-                print(">>>>>>>>>> not change...") #<-----------------------------------------------
+            prev_first_hash = self.extract_txs(response_list=response_list, users=users, coin=coin, only_first=False, prev_first_hash=prev_first_hash)
+
+            # if len(data) > 0:
+            #     self.store_txs_to_database(users=users, coin_data=data, coin=coin)
+            #     prev_first_hash = data[0]['Hash']
+            #     print(">>>>>>>>>> change!!!") #<-----------------------------------------------
+            # else:
+            #     print(">>>>>>>>>> not change...") #<-----------------------------------------------
 
 
     def main_process(self) -> None:
@@ -234,11 +227,12 @@ class Crawler:
 
         for coin, users in self.coin_users_map.items():
             if coin == "ETH" and len(users) > 0:
-                self.crawl_store_ether(users)
+                self.start_crawl_store_ether(users)
                 # threading.Thread(target=self.crawl_store_ether, daemon=True, args=[users]).start()
 
 
     def run(self) -> None:
+        logger.info(f'{type(self).__name__} started')
         restart_period = 10
         try:
             while True:
