@@ -101,6 +101,12 @@ class Crawler:
                 else:
                     if self.check_txs(txs_values):
                         self.store_txs_to_database(users=users, coin_data=[txs_values], coin=coin)
+                if len(get_whitelist()) == 0:
+                    print(">>> There is no users.")
+                    break
+            if len(get_whitelist()) == 0:
+                    print(">>> There is no users.")
+                    break
         return first_txs['Hash']
 
 
@@ -167,8 +173,8 @@ class Crawler:
             try:
                 configuration = UserConfiguration(user)
                 configuration.Lock_update_coin_alerts(coin_data=coin_data, coin=coin)
-            except Exception:
-                print(f"Jump the {user}")
+            except Exception as e:
+                print(f"Jump the {user} from this error: {e}")
 
 
 
