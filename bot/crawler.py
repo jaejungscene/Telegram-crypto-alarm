@@ -60,6 +60,7 @@ class Crawler:
         if PROXY == False:
             response = requests.get(url, headers=HEADERS)
         else:
+            print("############################")
             response = requests.get(
                 url=PROXY_URL,
                 params={
@@ -105,8 +106,7 @@ class Crawler:
                     print(">>> There is no users.")
                     break
             if len(get_whitelist()) == 0:
-                    print(">>> There is no users.")
-                    break
+                break
         return first_txs['Hash']
 
 
